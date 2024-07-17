@@ -63,7 +63,7 @@ const Contact = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-          className="form-input mt-1 block w-full bg-black"
+          className="form-input mt-1 block w-full bg-black rounded-2xl"
         />
       </div>
       <div className="mb-4">
@@ -74,7 +74,7 @@ const Contact = () => {
           value={Email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="form-Input mt-1 block w-full bg-black"
+          className="form-Input mt-1 block w-full bg-black rounded-2xl"
         />
       </div>
       <div className="mb-4">
@@ -85,7 +85,7 @@ const Contact = () => {
           value={Mobile}
           onChange={(e) => setMobile(e.target.value)}
           required
-          className="form-Input mt-1 block w-full bg-black"
+          className="form-Input mt-1 block w-full bg-black rounded-2xl"
         />
       </div>
       <div className="mb-4">
@@ -96,13 +96,13 @@ const Contact = () => {
           value={Message}
           onChange={(e) => setMessage(e.target.value)}
           required
-          className="form-Input mt-1 block w-full h-[100px] bg-black"
+          className="form-Input mt-1 block w-full h-[100px] bg-black rounded-2xl"
         />
       </div>
       
       <button
         type="submit"
-        className={`w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${allFieldsFilled() ? '' : 'opacity-50 cursor-not-allowed'}`}
+        className={`w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl ${allFieldsFilled() ? '' : 'opacity-50 cursor-not-allowed'}`}
         disabled={!allFieldsFilled()}
       >
         Submit

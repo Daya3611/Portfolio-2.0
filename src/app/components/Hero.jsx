@@ -82,7 +82,7 @@ function Hero() {
                     <DialogTitle>Get in touch</DialogTitle>
                     <DialogDescription>
                     Fill in the form to get in touch with me.
-                         <Contact />
+                         <Contact className="rounded-3xl" />
                          <div className='mt-5 '>
                          or 
                          <div className='items-center gap-3 text-left'>
