@@ -35,26 +35,26 @@ function Hero() {
 
         
         <div className="space-y-6">
-            <p className="text-base md:text-lg lg:text-xl text-gray-800 italic font-serif">Hello! I am</p>
+            <p className="text-base md:text-lg lg:text-xl text-gray-800 italic font-serif dark:text-gray-400">Hello! I am</p>
             <div className="max-w-2xl md:max-w-2xl sm:max-w-1xl">
 
             {/* animate-text-gradient sm:inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400 italic */}
-                <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-900 via-slate-500 to-blue-700 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400 italic  text-center font-bold text-3xl md:text-5xl lg:text-6xl  sm:3xl md:4xl "><strong className=''>Dayanand Gawade .</strong></h1>
-                <h2 className="text-md md:text-lg lg:text-2xl text-gray-600 text-end font-medium">A Fullstack Web Developer</h2>
+                <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-800 via-slate-400 to-blue-700 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-blue-100 dark:via-blue-400 dark:to-blue-900 italic  text-center font-bold text-3xl md:text-5xl lg:text-6xl  sm:3xl md:4xl "><strong className=''>Dayanand Gawade .</strong></h1>
+                <h2 className="text-md md:text-lg lg:text-2xl text-gray-600 text-end font-medium dark:text-gray-400">A Fullstack Web Developer</h2>
             </div>
-            <p className="mt-4 text-base md:text-lg lg:text-xl text-gray-800 font-mono">
-                <a href=""><Typewriter
+            <p className="mt-4 text-base md:text-lg lg:text-xl text-gray-800 font-mono dark:text-gray-300">
+                <Typewriter
             options={{
                 strings: ["A full stack developer with a passion for creating modern and intuitive web applications.",],
                 autoStart: true,
                 loop: true,
             }}
-            /></a>
+            />
             
             </p>
             <div className='gap-2 p-2 grid grid-cols-2'>
-                <Button className="bg-blue-600 hover:bg-blue-400 hover:text-white ">Getin Touch</Button>
-                <Button className="bg-white border  border-blue-800 text-blue-700 hover:bg-blue-400 hover:text-white">Downlode Resume</Button>
+                <Button className="bg-blue-600 hover:bg-blue-400 hover:text-white  dark:text-white dark:hover:text-black">Getin Touch</Button>
+                <Button className="bg-white border  border-blue-800 text-blue-700 hover:bg-blue-400 hover:text-white dark:bg-black dark:text-blue-600 dark:hover:bg-gray-300 dark:hover:text-black">Downlode Resume</Button>
             </div>
         </div>
     </div>
