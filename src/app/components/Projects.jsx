@@ -11,20 +11,8 @@ const projects = [
         url: 'https://agricart-shop-4-25.vercel.app/'
     },
     {
-        title: 'Project 2',
-        description: 'This is another project',
-        img: 'https://via.placeholder.com/150',
-        url: 'https://example.com'
-    },
-    {
-        title: 'Project 2',
-        description: 'This is another project',
-        img: 'https://via.placeholder.com/150',
-        url: 'https://example.com'
-    },
-    {
-        title: 'Project 2',
-        description: 'This is another project',
+        title: 'More Project add soon....',
+        description: 'more Projects is under development',
         img: 'https://via.placeholder.com/150',
         url: 'https://example.com'
     }
@@ -33,7 +21,7 @@ const projects = [
 function Projects() {
   return (
     <div className='text-center mt-20 p-8'>
-      <h1 className='text-4xl font-serif font-bold mb-8'>Projects</h1>
+      <h1 className='text-4xl font-sans font-bold mb-8'>Projects</h1>
       
       <div className='p-4'>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8  '>
@@ -42,7 +30,7 @@ function Projects() {
             <img src={project.img} alt={project.title} className='w-full max-h-40 sm:max-h-30  object-fit rounded-3xl mb-4' />
             <h2 className='text-xl font-semibold mb-2'>{project.title}</h2>
             <p className='text-gray-700'>{project.description}</p>
-            <Link href={project.url}><Button className='mt-3 rounded-3xl'>Live Site</Button></Link>
+            <Link href={project.url}><Button className='mt-3 rounded-3xl bg-blue-600'>Live Site</Button></Link>
           </a>
         ))}
       </div>

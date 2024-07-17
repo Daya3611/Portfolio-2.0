@@ -8,7 +8,7 @@ function Header() {
     <div className='flex items-center   h-20 p-10'>
       <div className='flex items-center'>
         <div className='mr-4'>
-          <Avatar>
+          <Avatar className="border border-blue-600 boder-size-5">
             <AvatarImage src="/profile.png" />
             <AvatarFallback>DA</AvatarFallback>
           </Avatar>
