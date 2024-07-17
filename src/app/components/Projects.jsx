@@ -32,7 +32,7 @@ function Projects() {
       <div className='p-4'>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8  '>
         {projects.map((project, index) => (
-          <a key={index} href={project.url} className='block bg-white  p-4 border dark:border-gray-700 dark:shadow-lg dark:shadow-gray-800 dark:hover:shadow-xl dark:transition-shadow dark:duration-300 border-gray-300 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 dark:text-white'>
+          <a key={index} href={project.url} className='block bg-white dark:bg-black p-4 border dark:border-gray-700 dark:shadow-lg dark:shadow-gray-800 dark:hover:shadow-xl dark:transition-shadow dark:duration-300 border-gray-300 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 dark:text-white'>
             <img src={project.img} alt={project.title} className='w-full max-h-40 sm:max-h-30   object-fit rounded-3xl mb-4' />
             <h2 className='text-xl font-semibold mb-2'>{project.title}</h2>
             <p className='text-gray-700 dark:text-gray-400'>{project.description}</p>

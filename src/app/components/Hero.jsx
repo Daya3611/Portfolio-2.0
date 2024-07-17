@@ -4,13 +4,15 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import Typewriter from 'typewriter-effect';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { useToast } from "@/components/ui/use-toast"
 
 function Hero() {
-
+    const { toast } = useToast()
     const [state, setState] = useState();
     useEffect(() => {
         // Effect logic
       }, []);
+      
 
   return (
     <div className="relative overflow-hidden mt-10">
@@ -53,8 +55,21 @@ function Hero() {
             
             </p>
             <div className='gap-2 p-2 grid grid-cols-2'>
-                <Button className="bg-blue-600 hover:bg-blue-400 hover:text-white  dark:text-white dark:hover:text-black">Getin Touch</Button>
-                <Button className="bg-white border  border-blue-800 text-blue-700 hover:bg-blue-400 hover:text-white dark:bg-black dark:text-blue-600 dark:hover:bg-gray-300 dark:hover:text-black">Downlode Resume</Button>
+                <Button className="bg-blue-600 hover:bg-blue-400 hover:text-white  dark:text-white dark:hover:text-black" onClick={() => {
+        toast({
+            title: "This Function is Not devloped yet.",
+          description: "please try after some time.",
+        })
+      }}
+                >Getin Touch</Button>
+                <Button className="bg-white border  border-blue-800 text-blue-700 hover:bg-blue-400 hover:text-white dark:bg-black dark:text-blue-600 dark:hover:bg-gray-300 dark:hover:text-black"
+                onClick={() => {
+                    toast({
+                        title: "This Function is Not devloped yet.",
+                      description: "please try after some time.",
+                    })
+                  }}
+                  >Downlode Resume</Button>
             </div>
         </div>
     </div>

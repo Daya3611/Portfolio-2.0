@@ -1,7 +1,7 @@
 import { Poppins  } from "next/font/google"
 import "./globals.css";
 import { Lora } from "next/font/google";
-
+import { Toaster } from "@/components/ui/toaster"
 
 const fontSans = Poppins ({
   subsets: ["latin"],
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body className={fontSans.className}>{children}
-      
+      <Toaster />
       
       </body>
       
