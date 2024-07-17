@@ -11,10 +11,10 @@ const projects = [
         url: 'https://agricart-shop-4-25.vercel.app/'
     },
     {
-      title: 'More Project add soon....',
-      description: 'more Projects is under development',
-      img: 'https://via.placeholder.com/150',
-      url: 'https://example.com'
+      title: 'Tailwind CSS Bg Gradient',
+      description: 'Tailwind CSS Background Gradient Plugin',
+      img: '/tailwindbg.png',
+      url: 'https://tailwind-bg-tawny.vercel.app/'
     },
     {
         title: 'More Project add soon....',
