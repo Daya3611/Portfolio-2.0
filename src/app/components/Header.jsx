@@ -24,7 +24,7 @@ function Header() {
           </Avatar>
         </div>
         <div className='flex  text-center items-center'>
-          <h1 className='sm:text-1xl md:text-1xl text-black  lg:text-3xl font-bold animate-text-gradient bg-gradient-to-r from-neutral-900 via-slate-700 to-blue-600 dark:from-neutral-100 dark:via-slate-400 dark:to-blue-600  bg-clip-text landing-tight text-transparent '>Dayanand <span className='text-blue-600'>.</span></h1> 
+          <h1 className='sm:text-2xl md:text-2xl text-black  lg:text-3xl font-bold animate-text-gradient bg-gradient-to-r from-neutral-900 via-slate-700 to-blue-600 dark:from-neutral-100 dark:via-slate-400 dark:to-blue-600  bg-clip-text landing-tight text-transparent '>Dayanand <span className='text-blue-600'>.</span></h1> 
           
         </div>
       </div>
