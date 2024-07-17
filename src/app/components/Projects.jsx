@@ -17,10 +17,10 @@ const projects = [
       url: 'https://tailwind-bg-tawny.vercel.app/'
     },
     {
-        title: 'More Project add soon....',
-        description: 'more Projects is under development',
-        img: 'https://via.placeholder.com/150',
-        url: 'https://example.com'
+        title: 'File Shareing Site',
+        description: 'Share File By using URL',
+        img: '/file-uplode.png',
+        url: 'https://file-share-site-ten.vercel.app/'
     }
 ];
 
@@ -28,8 +28,9 @@ function Projects() {
   return (
     <div className='text-center mt-20 p-8'>
       
+      <h1 className='text-5xl font-sans font-extrabold'>Projects</h1>
       
-      <div className='p-4'>
+      <div className='p-4 mt-5'>
         
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8  '>
         
