@@ -38,7 +38,7 @@ function Hero() {
             <div className="max-w-2xl">
 
             {/* animate-text-gradient sm:inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400 italic */}
-                <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-900 via-slate-500 to-blue-500 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400 italic  text-center text-4xl md:text-5xl lg:text-6xl font-bold"><strong>Dayanand Gawade</strong></h1>
+                <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-900 via-slate-500 to-blue-500 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400 italic  text-center text-4xl md:text-5xl lg:text-6xl font-bold sm:3xl md:4xl"><strong>Dayanand Gawade</strong></h1>
                 <h2 className="text-xl md:text-2xl lg:text-2xl text-gray-600 text-end font-semibold">A Fullstack Web Developer</h2>
             </div>
             <p className="mt-4 text-base md:text-lg lg:text-xl text-gray-800 font-mono">
