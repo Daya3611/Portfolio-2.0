@@ -6,12 +6,29 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { useToast } from "@/components/ui/use-toast"
 
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+  } from "@/components/ui/dialog"
+import Contact from './Contact';
+import { Instagram } from 'lucide-react';
+import Link from 'next/link';
+  
+
+  
+
 function Hero() {
     const { toast } = useToast()
     const [state, setState] = useState();
     useEffect(() => {
         // Effect logic
       }, []);
+
+      
       
 
   return (
@@ -55,13 +72,37 @@ function Hero() {
             
             </p>
             <div className='gap-2 p-2 grid grid-cols-2'>
-                <Button className="bg-blue-600 hover:bg-blue-400 hover:text-white  dark:text-white dark:hover:text-black" onClick={() => {
-        toast({
-            title: "This Function is Not devloped yet.",
-          description: "please try after some time.",
-        })
-      }}
-                >Getin Touch</Button>
+            
+            <Dialog>
+                <Button className="bg-blue-600 hover:bg-blue-400 hover:text-white  dark:text-white  dark:hover:text-black" 
+                >
+                <DialogTrigger className='w-full'>Getin Touch</DialogTrigger>
+                <DialogContent className="dark:bg-black">
+                    <DialogHeader>
+                    <DialogTitle>Get in touch</DialogTitle>
+                    <DialogDescription>
+                    Fill in the form to get in touch with me.
+                         <Contact />
+                         <div className='mt-5 '>
+                         or 
+                         <div className='items-center gap-3 text-left'>
+                            <Link href="www.linkedin.com/in/dayanandgawade">
+                            <Button className='mr-2 dark:bg-black border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white' >Linkedin</Button>
+                            </Link>
+                            <Link href="mailto:dayanandgawade@dayanandpvtltd.eu.org">
+                            <Button className='mr-2 dark:bg-black border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white'>Email</Button>
+                            </Link>
+                            <Link href="https://www.instagram.com/dayanandgawade8/">
+                            <Button className='mr-2 dark:bg-black border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white'><Instagram className='h-[15px] w-[15px]' /> Insta</Button>
+                            </Link>
+                         </div>
+                            
+                         </div>
+                         
+                    </DialogDescription>
+                    </DialogHeader>
+                </DialogContent>
+                </Button></Dialog>
                 <Button className="bg-white border  border-blue-800 text-blue-700 hover:bg-blue-400 hover:text-white dark:bg-black dark:text-blue-600 dark:hover:bg-gray-300 dark:hover:text-black"
                 onClick={() => {
                     toast({
@@ -79,3 +120,4 @@ function Hero() {
 }
 
 export default Hero
+
