@@ -14,11 +14,17 @@ const fontSans = Poppins ({
 export const metadata = {
   title: "Dayanand Gawade",
   description: "Devloper Portfolio of Dayanand Gawade",
+  icons:{
+    icon: ['./profile.png']
+  }
 };
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
+      
       <Toaster />
       <body className={fontSans.className}>
         
