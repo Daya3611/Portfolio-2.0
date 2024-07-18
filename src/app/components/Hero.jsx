@@ -73,27 +73,30 @@ function Hero() {
             </p>
             <div className='gap-2 p-2 grid grid-cols-2'>
             
-            <Dialog>
+            <Dialog className='p-5'>
                 <Button className="bg-blue-600 hover:bg-blue-400 hover:text-white  dark:text-white  dark:hover:text-black" 
                 >
                 <DialogTrigger className='w-full'>Getin Touch</DialogTrigger>
-                <DialogContent className="dark:bg-black">
+                <DialogContent className="dark:bg-black p-5 rounded-3xl m-auto dark:border-gray-500">
                     <DialogHeader>
                     <DialogTitle>Get in touch</DialogTitle>
                     <DialogDescription>
                     Fill in the form to get in touch with me.
-                         <Contact className="rounded-3xl" />
-                         <div className='mt-5 '>
+                        <div className='text-left'>
+                        <Contact className="rounded-3xl" />
+                        </div>
+                         
+                         <div className='mt-5 text-left'>
                          or 
                          <div className='items-center gap-3 text-left'>
                             <Link href="www.linkedin.com/in/dayanandgawade">
-                            <Button className='mr-2 dark:bg-black border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white' >Linkedin</Button>
+                            <Button className='mr-2 bg-white dark:bg-black text-blue-500 hover:bg-blue-600 hover:text-white border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white' >Linkedin</Button>
                             </Link>
                             <Link href="mailto:dayanandgawade@dayanandpvtltd.eu.org">
-                            <Button className='mr-2 dark:bg-black border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white'>Email</Button>
+                            <Button className='mr-2 bg-white dark:bg-black text-blue-500 hover:bg-blue-600 hover:text-white  border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white'>Email</Button>
                             </Link>
                             <Link href="https://www.instagram.com/dayanandgawade8/">
-                            <Button className='mr-2 dark:bg-black border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white'><Instagram className='h-[15px] w-[15px]' /> Insta</Button>
+                            <Button className='mr-2 bg-white dark:bg-black hover:bg-blue-600 hover:text-white text-blue-500 border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white jus'><Instagram className='h-[15px] w-[15px]' />  Insta</Button>
                             </Link>
                          </div>
                             

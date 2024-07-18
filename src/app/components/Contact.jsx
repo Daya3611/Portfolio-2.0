@@ -55,48 +55,48 @@ const Contact = () => {
   return (
     
     <form onSubmit={handleSubmit} className="mt-10">
-      <div className="mb-4">
-        <label htmlFor="name" className="block text-gray-700">Name:</label>
+      <div className="mb-4 ">
+        <label htmlFor="name" className="block text-gray-700 dark:text-white ">Name:</label>
         <Input
           id="name"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-          className="form-input mt-1 block w-full bg-black rounded-2xl"
+          className="form-input mt-1 block w-full bg-white dark:bg-black rounded-2xl"
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="Email" className="block text-gray-700">Email:</label>
+        <label htmlFor="Email" className="block text-gray-700 dark:text-white">Email:</label>
         <Input
           id="Email"
           type="text"
           value={Email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="form-Input mt-1 block w-full bg-black rounded-2xl"
+          className="form-Input mt-1 block w-full bg-white dark:bg-black rounded-2xl"
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="Mobile" className="block text-gray-700">Mobile:</label>
+        <label htmlFor="Mobile" className="block text-gray-700 dark:text-white">Mobile:</label>
         <Input
           id="Mobile"
           type="text"
           value={Mobile}
           onChange={(e) => setMobile(e.target.value)}
           required
-          className="form-Input mt-1 block w-full bg-black rounded-2xl"
+          className="form-Input mt-1 block w-full bg-white dark:bg-black rounded-2xl"
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="Message" className="block text-gray-700">Message:</label>
+        <label htmlFor="Message" className="block text-gray-700 dark:text-white">Message:</label>
         <Textarea
           id="Message"
           type="text"
           value={Message}
           onChange={(e) => setMessage(e.target.value)}
           required
-          className="form-Input mt-1 block w-full h-[100px] bg-black rounded-2xl"
+          className="form-Input mt-1 block w-full h-[100px] bg-white dark:bg-black rounded-2xl"
         />
       </div>
       
