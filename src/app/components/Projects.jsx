@@ -8,19 +8,29 @@ const projects = [
         title: 'Agricart FPC Shop Site',
         description: 'This is a project',
         img: '/agricart-shop.png',
-        url: 'https://agricart-shop-4-25.vercel.app/'
+        url: 'https://agricart-shop-4-25.vercel.app/',
+        source: 'https://github.com/Daya3611/404.git'
     },
     {
       title: 'Tailwind CSS Bg Gradient',
       description: 'Tailwind CSS Background Gradient Plugin',
       img: '/tailwindbg.png',
-      url: 'https://tailwind-bg-tawny.vercel.app/'
+      url: 'https://tailwind-bg-tawny.vercel.app/',
+      source: 'https://github.com/Daya3611/404.git'
+    },
+    {
+      title: 'Animated Portfolio',
+      description: 'Animated Portfolio For Developer with Tailwind CSS , Morder & Minimal Design',
+      img: '/tailwindbg.png',
+      url: 'https://aaceternity-portfolio-morden.vercel.app/',
+      source: 'https://github.com/Daya3611/Aaceternity-portfolio-morden.git'
     },
     {
         title: 'File Shareing Site',
         description: 'Share File By using URL',
         img: '/file-uplode.png',
-        url: 'https://file-share-site-ten.vercel.app/'
+        url: 'https://file-share-site-ten.vercel.app/',
+        source: 'https://github.com/Daya3611/404.git'
     }
 ];
 
@@ -40,7 +50,15 @@ function Projects() {
             <img src={project.img} alt={project.title} className='w-full max-h-40 sm:max-h-30   object-fit rounded-3xl mb-4' />
             <h2 className='text-xl font-semibold mb-2'>{project.title}</h2>
             <p className='text-gray-700 dark:text-gray-400'>{project.description}</p>
-            <Link href={project.url}><Button className='mt-3 rounded-3xl bg-blue-600 dark:text-white'>Live Site</Button></Link>
+            <div className='mt-4 flex gap-5 w-full'>
+            <Link href={project.url}>
+              <Button className='mt-3 rounded-lg bg-blue-600 hover:bg-blue-400 dark:text-white p-4 w-full dark:hover:text-blue-700'>Live Site</Button>
+            </Link>
+            <Link href={project.source}>
+              <Button className='mt-3 rounded-lg bg-transperent border border-blue-700 dark:text-white dark:hover:text-black text-blue-700 hover:bg-blue-400 hover:text-white'>Source Code</Button>
+            </Link>
+          </div>
+                      
           </a>
           
         ))}
