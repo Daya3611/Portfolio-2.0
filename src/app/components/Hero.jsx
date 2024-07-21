@@ -61,14 +61,8 @@ function Hero() {
                 <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-800 via-slate-400 to-blue-700 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-blue-100 dark:via-blue-400 dark:to-blue-900 italic  text-center font-bold text-3xl md:text-5xl lg:text-6xl  sm:3xl md:4xl "><strong>Dayanand Gawade .</strong></h1>
                 <h2 className="text-md md:text-lg lg:text-2xl text-gray-600 text-end font-medium dark:text-gray-400 italic">A Fullstack Web Developer</h2>
             </div>
-            <p className="mt-4 text-base md:text-lg lg:text-xl text-gray-800 font-mono dark:text-gray-300">
-                <Typewriter
-            options={{
-                strings: ["A full stack developer with a passion for creating modern and intuitive web applications.",],
-                autoStart: true,
-                loop: true,
-            }}
-            />
+            <p className="mt-4 text-base md:text-lg lg:text-xl text-gray-800 font-mono dark:text-gray-300 italic">
+                A full stack developer with a passion for creating modern and intuitive web applications.
             
             </p>
             <div className='gap-2 p-2 grid grid-cols-2'>

@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Fotter from "./components/Fotter";
 import { ThemeProvider } from "next-themes";
 
+
 export default function Home() {
   return (
     <div>
