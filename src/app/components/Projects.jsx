@@ -39,7 +39,14 @@ const projects = [
         img: '/file-uplode.png',
         url: 'https://file-share-site-ten.vercel.app/',
         source: 'https://github.com/Daya3611/404.git'
-    }
+    },
+    {
+      title: 'URL Shortener',
+      description: 'ShortURL allows to shorten long links from Instagram .........',
+      img: '/url-shortner.png',
+      url: 'https://miniurl.dayanandgawade.in/',
+      source: 'https://github.com/Daya3611/404.git'
+  },
 ];
 
 function Projects() {
