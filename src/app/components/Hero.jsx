@@ -37,38 +37,32 @@ function Hero() {
     
 
     
-    <div className="w-full max-w-3xl px-4 py-8 mx-auto mt-10">
+    <div className="w-full  px-1 py-8 mx-auto mt-10">
         
-        {/* <div className="bg-yellow-100 border border-yellow-300 text-yellow-700 rounded-lg p-4 mb-8">
-            <div className="flex items-start">
-                <div className="flex-shrink-0">
-                    
-                    
-                </div>
-                <div className="ml-3">
-                    <p className="font-semibold">Heads up!</p>
-                    <p>You can add components and dependencies to your app using the CLI.</p>
-                </div>
-            </div>
-        </div> */}
+        
 
         
         <div className="space-y-6">
-            <p className="text-base md:text-lg lg:text-xl text-gray-800 italic font-serif dark:text-gray-400">Hello! I am</p>
-            <div className="max-w-2xl md:max-w-2xl sm:max-w-1xl">
+            <div className=''>
+            
+            <div className="w-full text-start items-start">
 
-            {/* animate-text-gradient sm:inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400 italic */}
-                <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-800 via-slate-400 to-blue-700 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-blue-100 dark:via-blue-400 dark:to-blue-900 italic  text-center font-bold text-3xl md:text-5xl lg:text-6xl  sm:3xl md:4xl "><strong>Dayanand Gawade .</strong></h1>
-                <h2 className="text-md md:text-lg lg:text-2xl text-gray-600 text-end font-medium dark:text-gray-400 italic">A Fullstack Web Developer</h2>
+            
+                <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-800 via-slate-400 to-blue-700 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-blue-100 dark:via-blue-400 dark:to-blue-900   text-start font-bold text-3xl md:text-4xl lg:text-6xl  sm:xl  ">
+                 <div className='font-sans text-[18px]  sm:text-[30px] lg:text-[30px] text-black animate-bounce dark:text-gray-200'>Hello! I am</div>
+                 <strong className='italic text-[30px] md:text-[50px] lg:text-[60px]'>Dayanand Gawade . <br /></strong>
+                 <span className='text-[18px]  sm:text-[30px] lg:text-[30px] font-sans text-black dark:text-gray-200'>A Fullstack Web Developer form India</span></h1>
+
+                
             </div>
-            <p className="mt-4 text-base md:text-lg lg:text-xl text-gray-800 font-mono dark:text-gray-300 italic">
+            <p className="mt-4 text-base text-[14px] lg:text-[15px] text-gray-600  dark:text-gray-300 italic justify-evenly">
                 A full stack developer with a passion for creating modern and intuitive web applications.
             
             </p>
-            <div className='gap-2 p-2 grid grid-cols-2'>
+            <div className='flex gap-3 py-6'>
             
-            <Dialog className='p-5'>
-                <Button className="bg-blue-600 hover:bg-blue-400 hover:text-white  dark:text-white  dark:hover:text-black" 
+            <Dialog className='p-5 mr-2'>
+                <Button className="bg-black dark:bg-blue-600 hover:bg-gray-400 hover:text-white  dark:text-white  dark:hover:text-black " 
                 >
                 <DialogTrigger className='w-full'>Getin Touch</DialogTrigger>
                 <DialogContent className="dark:bg-black p-5 rounded-3xl m-auto dark:border-gray-500">
@@ -77,20 +71,20 @@ function Hero() {
                     <DialogDescription>
                     Fill in the form to get in touch with me.
                         <div className='text-left'>
-                        <Contact className="rounded-3xl" />
+                        <Contact className="rounded-2xl" />
                         </div>
                          
                          <div className='mt-5 text-left'>
                          or 
                          <div className='items-center gap-3 text-left'>
                             <Link href="www.linkedin.com/in/dayanandgawade">
-                            <Button className='mr-2 bg-white dark:bg-black text-blue-500 hover:bg-blue-600 hover:text-white border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white' >Linkedin</Button>
+                            <Button className='mr-2 bg-white dark:bg-black text-gray-500 hover:bg-gray-600 hover:text-white border dark:hover:bg-gray-600 dark:border-gray-400 dark:text-white' >Linkedin</Button>
                             </Link>
                             <Link href="mailto:dayanandgawade@dayanandpvtltd.eu.org">
-                            <Button className='mr-2 bg-white dark:bg-black text-blue-500 hover:bg-blue-600 hover:text-white  border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white'>Email</Button>
+                            <Button className='mr-2 bg-white dark:bg-black text-gray-500 hover:bg-gray-600 hover:text-white  border dark:hover:bg-gray-600 dark:border-gray-400 dark:text-white'>Email</Button>
                             </Link>
                             <Link href="https://www.instagram.com/dayanandgawade8/">
-                            <Button className='mr-2 bg-white dark:bg-black hover:bg-blue-600 hover:text-white text-blue-500 border dark:hover:bg-blue-600 dark:border-gray-400 dark:text-white jus'><Instagram className='h-[15px] w-[15px]' />  Insta</Button>
+                            <Button className='mr-2 bg-white dark:bg-black hover:bg-gray-600 hover:text-white text-gray-500 border dark:hover:bg-gray-600 dark:border-gray-400 dark:text-white jus'><Instagram className='h-[15px] w-[15px]' />  Insta</Button>
                             </Link>
                          </div>
                             
@@ -100,7 +94,7 @@ function Hero() {
                     </DialogHeader>
                 </DialogContent>
                 </Button></Dialog>
-                <Button className="bg-white border  border-blue-800 text-blue-700 hover:bg-blue-400 hover:text-white dark:bg-black dark:text-blue-600 dark:hover:bg-gray-300 dark:hover:text-black"
+                <Button className="bg-white border  border-gray-800 dark:border-blue-500 text-gray-700 hover:bg-gray-400 hover:text-white dark:bg-transparent dark:text-blue-500 dark:hover:bg-blue-300 dark:hover:text-black"
                 onClick={() => {
                     toast({
                         title: "This Function is Not devloped yet.",
@@ -109,7 +103,10 @@ function Hero() {
                   }}
                   >Downlode Resume</Button>
             </div>
+            </div>
         </div>
+
+        
     </div>
 </div>
 
