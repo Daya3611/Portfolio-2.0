@@ -67,10 +67,10 @@ function Projects() {
             <p className='text-gray-700 text-[12px] dark:text-gray-400'>{project.description}</p>
             <div className='mt-4 gap-2.5 w-full flex pb-1'>
               <Link href={project.url}>
-                <Button className='mt-3 rounded-lg bg-black dark:bg-blue-600 dark:hover:bg-blue-400 dark:hover:text-black hover:bg-gray-400 dark:text-white p-4 w-full '>Live Site</Button>
+                <Button target='_blank' className='mt-3 rounded-lg bg-black dark:bg-blue-600 dark:hover:bg-blue-400 dark:hover:text-black hover:bg-gray-400 dark:text-white p-4 w-full '>Live Site</Button>
               </Link>
               <Link href={project.source}>
-                <Button className='mt-3 rounded-lg bg-transperent border border-gray-700 dark:text-white dark:hover:text-black text-black hover:bg-blue-400 hover:text-white w-full'>Source Code</Button>
+                <Button target='_blank' className='mt-3 rounded-lg bg-transperent border border-gray-700 dark:text-white dark:hover:text-black text-black hover:bg-blue-400 hover:text-white w-full target:_blank'>Source Code</Button>
               </Link>
             </div>
                       
