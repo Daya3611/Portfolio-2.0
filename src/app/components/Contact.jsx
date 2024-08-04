@@ -56,53 +56,53 @@ const Contact = () => {
     
     <form onSubmit={handleSubmit} className="mt-10">
       <div className="mb-4 ">
-        <label htmlFor="name" className="block text-gray-700 dark:text-white ">Name:</label>
+        <label htmlFor="name" className="block text-gray-400 dark:text-white ">Name:</label>
         <Input
           id="name"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-          className="form-input mt-1 block w-full bg-white dark:bg-black rounded-2xl"
+          className="form-input mt-1 block w-full bg-white text-black dark:text-blue-200 dark:bg-transparent rounded-xl"
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="Email" className="block text-gray-700 dark:text-white">Email:</label>
+        <label htmlFor="Email" className="block text-gray-400 dark:text-white">Email:</label>
         <Input
           id="Email"
           type="text"
           value={Email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="form-Input mt-1 block w-full bg-white dark:bg-black rounded-2xl"
+          className="form-Input mt-1 block w-full bg-white text-black dark:text-blue-200 dark:bg-transparent rounded-xl"
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="Mobile" className="block text-gray-700 dark:text-white">Mobile:</label>
+        <label htmlFor="Mobile" className="block text-gray-400 dark:text-white">Mobile:</label>
         <Input
           id="Mobile"
           type="text"
           value={Mobile}
           onChange={(e) => setMobile(e.target.value)}
           required
-          className="form-Input mt-1 block w-full bg-white dark:bg-black rounded-2xl"
+          className="form-Input mt-1 block w-full bg-white text-black dark:text-blue-200 dark:bg-transparent rounded-xl"
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="Message" className="block text-gray-700 dark:text-white">Message:</label>
+        <label htmlFor="Message" className="block text-gray-400 dark:text-white">Message:</label>
         <Textarea
           id="Message"
           type="text"
           value={Message}
           onChange={(e) => setMessage(e.target.value)}
           required
-          className="form-Input mt-1 block w-full h-[100px] bg-white dark:bg-black rounded-2xl"
+          className="form-Input mt-1 block w-full h-[100px] bg-white text-black dark:text-blue-200 dark:bg-transparent rounded-xl"
         />
       </div>
       
       <button
         type="submit"
-        className={`w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl ${allFieldsFilled() ? '' : 'opacity-50 cursor-not-allowed'}`}
+        className={`w-full bg-gray-500 dark:bg-blue-600 dark:hover:bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-2xl ${allFieldsFilled() ? '' : 'opacity-50 cursor-not-allowed dark:bg-blue-800 bg-gray-500'}`}
         disabled={!allFieldsFilled()}
       >
         Submit

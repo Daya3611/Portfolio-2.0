@@ -15,7 +15,7 @@ import {
     DialogTrigger,
   } from "@/components/ui/dialog"
 import Contact from './Contact';
-import { Instagram } from 'lucide-react';
+import { DownloadIcon, Instagram, InstagramIcon, Linkedin, Mail } from 'lucide-react';
 import Link from 'next/link';
   
 
@@ -65,7 +65,7 @@ function Hero() {
                 <Button className="bg-black dark:bg-blue-600 hover:bg-gray-400 hover:text-white  dark:text-white  dark:hover:text-black " 
                 >
                 <DialogTrigger className='w-full'>Getin Touch</DialogTrigger>
-                <DialogContent className="dark:bg-black p-5 rounded-3xl m-auto dark:border-gray-500">
+                <DialogContent className="dark:bg-[#131313] p-5 rounded-3xl m-auto border-transparent ">
                     <DialogHeader>
                     <DialogTitle>Get in touch</DialogTitle>
                     <DialogDescription>
@@ -74,17 +74,17 @@ function Hero() {
                         <Contact className="rounded-2xl" />
                         </div>
                          
-                         <div className='mt-5 text-left'>
+                         <div className='mt-5 text-left flex gap-5'>
                          or 
-                         <div className='items-center gap-3 text-left'>
+                         <div className='items-center gap-3 text-left flex'>
                             <Link href="www.linkedin.com/in/dayanandgawade">
-                            <Button className='mr-2 bg-white dark:bg-black text-gray-500 hover:bg-gray-600 hover:text-white border dark:hover:bg-gray-600 dark:border-gray-400 dark:text-white' >Linkedin</Button>
+                            <Linkedin className=' bg-transparent   text-gray-500  hover:text-blue-600' />
                             </Link>
                             <Link href="mailto:dayanandgawade@dayanandpvtltd.eu.org">
-                            <Button className='mr-2 bg-white dark:bg-black text-gray-500 hover:bg-gray-600 hover:text-white  border dark:hover:bg-gray-600 dark:border-gray-400 dark:text-white'>Email</Button>
+                            <Mail className='bg-transparent   text-gray-500  hover:text-green-600' />
                             </Link>
                             <Link href="https://www.instagram.com/dayanandgawade8/">
-                            <Button className='mr-2 bg-white dark:bg-black hover:bg-gray-600 hover:text-white text-gray-500 border dark:hover:bg-gray-600 dark:border-gray-400 dark:text-white jus'><Instagram className='h-[15px] w-[15px]' />  Insta</Button>
+                            <InstagramIcon  className=' bg-transparent   text-gray-500  hover:text-orange-600'/>
                             </Link>
                          </div>
                             
@@ -94,14 +94,14 @@ function Hero() {
                     </DialogHeader>
                 </DialogContent>
                 </Button></Dialog>
-                <Button className="bg-white border  border-gray-800 dark:border-blue-500 text-gray-700 hover:bg-gray-400 hover:text-white dark:bg-transparent dark:text-blue-500 dark:hover:bg-blue-300 dark:hover:text-black"
+                <Button className="bg-transperent  dark:border-blue-500 text-gray-700 hover:bg-gray-400 hover:text-white dark:bg-transparent dark:text-blue-500 dark:hover:bg-blue-300 dark:hover:text-black flex gap-2"
                 onClick={() => {
                     toast({
                         title: "This Function is Not devloped yet.",
                       description: "please try after some time.",
                     })
                   }}
-                  >Downlode Resume</Button>
+                  > <DownloadIcon /> Downlode Resume</Button>
             </div>
             </div>
         </div>

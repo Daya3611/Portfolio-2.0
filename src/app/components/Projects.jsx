@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { GitBranchIcon, GitCommitVerticalIcon, Github, GithubIcon, LucideGithub } from 'lucide-react';
 
 // Sample data for projects
 const projects = [
@@ -70,7 +71,7 @@ function Projects() {
                 <Button target='_blank' className='mt-3 rounded-lg bg-black dark:bg-blue-600 dark:hover:bg-blue-400 dark:hover:text-black hover:bg-gray-400 dark:text-white p-4 w-full '>Live Site</Button>
               </Link>
               <Link href={project.source}>
-                <Button target='_blank' className='mt-3 rounded-lg bg-transperent border border-gray-700 dark:text-white dark:hover:text-black text-black hover:bg-blue-400 hover:text-white w-full target:_blank'>Source Code</Button>
+                <Button target='_blank' className='mt-3 rounded-full bg-transperent  border-gray-700 dark:text-white dark:hover:text-black text-black hover:bg-transparent dark:hover:text-blue-500  hover:text-blue-600 w-full target:_blank h-[3s0px]'> <Github />  </Button>
               </Link>
             </div>
                       
