@@ -71,7 +71,7 @@ function Projects() {
                 <Button target='_blank' className='mt-3 rounded-lg bg-black dark:bg-blue-600 dark:hover:bg-blue-400 dark:hover:text-black hover:bg-gray-400 dark:text-white p-4 w-full '>Live Site</Button>
               </Link>
               <Link href={project.source}>
-                <Button target='_blank' className='mt-3 rounded-full bg-transperent  border-gray-700 dark:text-white dark:hover:text-black text-black hover:bg-transparent dark:hover:text-blue-500  hover:text-blue-600 w-full target:_blank h-[3s0px]'> <Github />  </Button>
+                <Button target='_blank' className='mt-3 rounded-full bg-transperent  border-gray-700 dark:text-white  text-black hover:bg-transparent dark:hover:text-blue-500  hover:text-blue-600 w-full target:_blank h-[3s0px]'> <Github />  </Button>
               </Link>
             </div>
                       
