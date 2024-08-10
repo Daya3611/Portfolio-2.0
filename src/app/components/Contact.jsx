@@ -3,6 +3,17 @@ import { useState } from 'react';
 import { Input } from "@/components/ui/input"
 import { useToast } from "@/components/ui/use-toast"
 import { Textarea } from "@/components/ui/textarea"
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+
 
 
 const Contact = () => {
@@ -54,7 +65,7 @@ const Contact = () => {
 
   return (
     
-    <form onSubmit={handleSubmit} className="mt-10">
+    <form onSubmit={handleSubmit} className="mt-10 text-left">
       <div className="mb-4 ">
         <label htmlFor="name" className="block text-gray-400 dark:text-white ">Name:</label>
         <Input

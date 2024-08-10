@@ -5,15 +5,27 @@ import Typewriter from 'typewriter-effect';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { useToast } from "@/components/ui/use-toast"
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
 
 import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-  } from "@/components/ui/dialog"
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+
+
 import Contact from './Contact';
 import { DownloadIcon, Instagram, InstagramIcon, Linkedin, Mail } from 'lucide-react';
 import Link from 'next/link';
@@ -49,19 +61,19 @@ function Hero() {
 
             
                 <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-800 via-slate-400 to-blue-700 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-blue-100 dark:via-blue-400 dark:to-blue-900   text-start font-bold text-3xl md:text-4xl lg:text-6xl  sm:xl  ">
-                 <div className='font-sans text-[18px]  sm:text-[30px] lg:text-[30px] text-black animate-bounce dark:text-gray-200'>Hello! I am</div>
+                 <div className='font-sans text-[18px]  sm:text-[30px] lg:text-[30px] text-black  dark:text-gray-200'>Hello! I am</div>
                  <strong className='italic text-[30px] md:text-[50px] lg:text-[60px]'>Dayanand Gawade . <br /></strong>
                  <span className='text-[18px]  sm:text-[30px] lg:text-[30px] font-sans text-black dark:text-gray-200'>A Fullstack Web Developer form India</span></h1>
 
                 
             </div>
-            <p className="mt-4 text-base text-[14px] lg:text-[15px] text-gray-600  dark:text-gray-300 italic justify-evenly">
+            <p className="mt-4 text-base text-[11.5px] lg:text-[15px] text-gray-600  dark:text-gray-300 italic justify-evenly">
                 A full stack developer with a passion for creating modern and intuitive web applications.
             
             </p>
             <div className='flex gap-3 py-6'>
             
-            <Dialog className='p-5 mr-2'>
+            {/* <Dialog className='p-5 mr-2'>
                 <Button className="bg-black dark:bg-blue-600 hover:bg-gray-400 hover:text-white  dark:text-white  dark:hover:text-black " 
                 >
                 <DialogTrigger className='w-full'>Getin Touch</DialogTrigger>
@@ -93,7 +105,26 @@ function Hero() {
                     </DialogDescription>
                     </DialogHeader>
                 </DialogContent>
-                </Button></Dialog>
+                </Button></Dialog> */}
+                <Drawer className="p-5 mr-2 items-center">
+                <DrawerTrigger className='bg-black text-white dark:bg-blue-600 hover:bg-gray-400 hover:text-white  dark:text-white  dark:hover:text-black rounded-lg p-2 '>Getin Touch</DrawerTrigger>
+                <DrawerContent className="">
+                  <DrawerHeader>
+                    <DrawerTitle>Getin Touch</DrawerTitle>
+                    <DrawerDescription>This action cannot be undone.
+                      <Contact  />
+                    </DrawerDescription>
+                  </DrawerHeader>
+                  <DrawerFooter>
+                    {/* <Button>Submit</Button> */}
+                    <DrawerClose>
+                      <Button variant="outline">Cancel</Button>
+                    </DrawerClose>
+                  </DrawerFooter>
+                </DrawerContent>
+              </Drawer>
+
+
                 <Button className="bg-transperent  dark:border-blue-500 text-gray-700 hover:bg-gray-400 hover:text-white dark:bg-transparent dark:text-blue-500 dark:hover:bg-blue-300 dark:hover:text-black flex gap-2"
                 onClick={() => {
                     toast({
