@@ -17,7 +17,7 @@ const projects = [
         title: 'Agricart FPC Ecomerce Site',
         description: 'Ecomerce Site with Next.js and Tailwind CSS & Firebase #BrandSite',
         img: '/agricart-shop.png',
-        url: 'https://agricart-shop-4-25.vercel.app/',
+        url: 'https://agricart-shop.vercel.app/',
         source: 'https://github.com/Daya3611/404.git'
     },
     {
