@@ -108,7 +108,7 @@ function Hero() {
                 </Button></Dialog> */}
                 <Drawer className="p-5 mr-2 items-center">
                 <DrawerTrigger className='bg-black text-white dark:bg-blue-600 hover:bg-gray-400 hover:text-white  dark:text-white  dark:hover:text-black rounded-lg p-2 '>Getin Touch</DrawerTrigger>
-                <DrawerContent className="">
+                <DrawerContent className="px-3">
                   <DrawerHeader>
                     <DrawerTitle>Getin Touch</DrawerTitle>
                     <DrawerDescription>This action cannot be undone.
@@ -117,9 +117,9 @@ function Hero() {
                   </DrawerHeader>
                   <DrawerFooter>
                     {/* <Button>Submit</Button> */}
-                    <DrawerClose>
+                    {/* <DrawerClose>
                       <Button variant="outline">Cancel</Button>
-                    </DrawerClose>
+                    </DrawerClose> */}
                   </DrawerFooter>
                 </DrawerContent>
               </Drawer>
