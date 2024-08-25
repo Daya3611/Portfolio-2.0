@@ -1,14 +1,11 @@
-import { Poppins  } from "next/font/google"
 import "./globals.css";
-import { Lora } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster"
+import { Bricolage_Grotesque } from "next/font/google";
 
-
-const fontSans = Poppins ({
+const bricolage_grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: ['100' ,'200' ,'300', '400', '500' ,'600' ,'700', '800' ,'900'],
-  variable: "--font-sans", });
-
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
 
 
 export const metadata = {
@@ -23,10 +20,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+      <head>
+         <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener('contextmenu', function(event) {
+                event.preventDefault();
+              });
+            `,
+          }}
+        />
+      </head>
       
       <Toaster />
-      <body className={fontSans.className}>
+      <body className={bricolage_grotesque.className}>
         
         {children}
       
