@@ -49,10 +49,10 @@ const projects = [
     source: 'https://github.com/Daya3611/404.git'
   },
   {
-    title: 'Ai Teligram Bot',
-    description: 'Ai Teligram Bot Backend with Google Gemini For Accurate Response',
-    img: '/ai-bot.png',
-    url: 'https://t.me/dayachatbot',
+    title: 'MusicHub',
+    description: 'MusicHub is a music player app that allows you to listen to your favorite music online',
+    img: '/musichub.png',
+    url: 'https://musichub.dayanandgawade.in/',
     source: 'https://github.com/Daya3611/404.git'
   },
 ];
