@@ -61,9 +61,9 @@ function Hero() {
 
             
                 <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-800 via-slate-400 to-blue-700 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-blue-100 dark:via-blue-400 dark:to-blue-900   text-start font-bold text-3xl md:text-4xl lg:text-6xl  sm:xl  ">
-                 <div className='font-sans text-[18px]  sm:text-[30px] lg:text-[30px] text-black  dark:text-gray-200'>Hello! I am</div>
+                 <div className=' text-[18px]  sm:text-[30px] lg:text-[30px] text-black  dark:text-gray-200'>Hello! I am</div>
                  <strong className='italic text-[30px] md:text-[50px] lg:text-[60px]'>Dayanand Gawade . <br /></strong>
-                 <span className='text-[18px]  sm:text-[30px] lg:text-[30px] font-sans text-black dark:text-gray-200'>A Fullstack Web Developer form India</span></h1>
+                 <span className='text-[18px]  sm:text-[30px] lg:text-[30px]  text-black dark:text-gray-200'>A Fullstack Web Developer from India</span></h1>
 
                 
             </div>

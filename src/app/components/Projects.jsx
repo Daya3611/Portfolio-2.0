@@ -27,13 +27,7 @@ const projects = [
     url: 'https://tailwind-bg-tawny.vercel.app/',
     source: 'https://github.com/Daya3611/404.git'
   },
-  {
-    title: 'Animated Portfolio',
-    description: 'Animated Portfolio For Developer with Tailwind.....',
-    img: '/portfilio.png',
-    url: 'https://aaceternity-portfolio-morden.vercel.app/',
-    source: 'https://github.com/Daya3611/Aaceternity-portfolio-morden.git'
-  },
+  
   {
     title: 'File Shareing Site',
     description: 'Share File By using URL',
