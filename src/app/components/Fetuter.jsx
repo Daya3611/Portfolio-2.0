@@ -9,27 +9,27 @@ import {
 const ft = [
     {
         id: 'item-1',
-        number: '01',
-        title: 'Design',
-        description: 'I make web designs that engage your audience and create the user experience you want.'
+        number: '01.',
+        title: 'UX / Wireframing',
+        description: 'Here we map out the elements clearly, so you can see what elements will be built into the end-product, and have a better idea of the intended behavior end-users will have while using it.'
     },
     {
         id: 'item-2',
-        number: '01',
-        title: 'Design',
-        description: 'I make web designs that engage your audience and create the user experience you want.'
+        number: '02.',
+        title: 'Web Design',
+        description: 'Based on the previous step of building a prototype for your idea, I design the best solution you can have for your business’ image.'
     },
     {
         id: 'item-3',
-        number: '01',
-        title: 'Design',
-        description: 'I make web designs that engage your audience and create the user experience you want.'
+        number: '03.',
+        title: 'Web Development',
+        description: 'I build and test your new high-performance website, for every device. Using any tech stack and framework you prefer (nextjs,reactjs, nodejs, etc).'
     },
     {
         id: 'item-4',
-        number: '01',
-        title: 'Design',
-        description: 'I make web designs that engage your audience and create the user experience you want.'
+        number: '04.',
+        title: 'Deployment',
+        description: 'I will deploy your new website to the cloud. or your local server.'
     },
 ]
 
@@ -45,7 +45,7 @@ function Fetuter() {
                 {ft.map((item, index) => (
                     <Accordion type="single" collapsible >
                         <AccordionItem value={item.id}>
-                            <AccordionTrigger className='text-3xl' type='single '>{item.number} {item.title}</AccordionTrigger>
+                            <AccordionTrigger className='text-3xl' type='single '>{item.number} {"  "} {item.title}</AccordionTrigger>
                             <AccordionContent className='text-muted-foreground'>
                                 {item.description}
                             </AccordionContent>

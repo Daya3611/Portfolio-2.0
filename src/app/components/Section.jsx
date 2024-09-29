@@ -2,7 +2,7 @@ import React from 'react'
 
 function Section() {
     return (
-        <section className='px-[95px] mt-5 mb-3'>
+        <section className='px-8 md:px-24 lg:px-[95px] mt-5 mb-3'>
             <h1 className='text-4xl'>I can help you with ....</h1>
 
             <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 mt-2   '>

@@ -46,7 +46,7 @@ function Hero() {
 
 
   return (
-    <section className='py-10 mt-3 px-[95px] max-w-3xl'>
+    <section className='py-10 mt-3 px-8 md:px-24 lg:px-[95px] max-w-3xl'>
       <div className='mt-4'>
         <h1 className='font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[150px] leading-none md:-ml-2.5'>Fullstack <SparklesText text='Developer' className='font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[150px] leading-none md:-ml-2.5' /></h1>
 

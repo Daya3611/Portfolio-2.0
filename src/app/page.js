@@ -7,6 +7,7 @@ import { ThemeProvider } from "next-themes";
 import Section from "./components/Section";
 import Fetuter from "./components/Fetuter";
 import Bottumtext from "./components/bottumtext";
+import Projects from "./components/projects";
 // import An from './components/An';
 
 
@@ -18,6 +19,7 @@ export default function Home() {
       
       <Hero />
       <Section/>
+      <Projects/>
       <Fetuter/>
       
       {/* <Projects /> */}

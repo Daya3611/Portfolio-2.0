@@ -20,7 +20,7 @@ export const animatedBorderClass = "before:content-[''] hover:before:left-auto h
 function Header() {
   const page = usePathname();
   return (
-    <header className='flex justify-between mt-5 py-3 px-[95px]' >
+    <header className='flex justify-between mt-5 py-3 px-8 md:px-24 lg:px-[95px] items-center' >
 
       <div className='flex gap-4 text-sm'>
         {page != "/" && (
