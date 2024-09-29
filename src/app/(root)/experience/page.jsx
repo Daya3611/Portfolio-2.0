@@ -6,7 +6,7 @@ export default function page() {
     return (
         <section className="mx-8 md:mx-20 lg:mx-24">
             <div className="mt-6">
-                <h1 className="text-4xl font-bold font-bold block md:hidden">Experience</h1>
+                <h1 className="text-4xl font-bold block md:hidden">Experience</h1>
                 <SparklesText text="Experience" className="text-4xl mb-7 hidden md:block" />
                 <p className="text-muted-foreground mt-5">As a full-stack developer, I have built and deployed numerous web applications and software solutions, leveraging a wide range of modern technologies. My GitHub repository showcases various projects where I have applied my expertise in both front-end and back-end development.</p>
             </div>

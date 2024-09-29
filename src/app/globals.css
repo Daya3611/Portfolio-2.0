@@ -78,3 +78,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.animt {
+  animation: fadeIn 1s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}

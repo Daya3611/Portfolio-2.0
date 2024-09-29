@@ -33,7 +33,7 @@ function Header() {
           <p className={animatedBorderClass}>About</p>
         </Link>
 
-        <Link href='/projects'>
+        <Link href='/#projects'>
           <p className={animatedBorderClass}>Projects</p>
         </Link>
 
