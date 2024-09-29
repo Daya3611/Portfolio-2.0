@@ -26,120 +26,42 @@ import {
 } from "@/components/ui/dialog"
 
 
-import Contact from './Contact';
+import Contact from '../olds/Contact';
 import { DownloadIcon, Instagram, InstagramIcon, Linkedin, Mail } from 'lucide-react';
 import Link from 'next/link';
-  
+import Myinfo from './Myinfo';
+import SparklesText from '@/components/ui/sparkles-text';
 
-  
+
+
 
 function Hero() {
-    const { toast } = useToast()
-    const [state, setState] = useState();
-    useEffect(() => {
-        // Effect logic
-      }, []);
+  const { toast } = useToast()
+  const [state, setState] = useState();
+  useEffect(() => {
+    // Effect logic
+  }, []);
 
-      
-      
+
+
 
   return (
-    <div className="relative overflow-hidden mt-10">
-    
-    
+    <section className='py-10 mt-3 px-[95px] max-w-3xl'>
+      <div className='mt-4'>
+        <h1 className='font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[150px] leading-none md:-ml-2.5'>Fullstack <SparklesText text='Developer' className='' /></h1>
 
-    
-    <div className="w-full  px-1 py-8 mx-auto mt-10">
-        
-        
+        <p className='mt-3 text-sm md:text-base  text-muted-foreground'>Specialized in Web Design, UX / UI, Backend Development, and Front End Development.</p>
 
-        
-        <div className="space-y-6">
-            <div className=''>
-            
-            <div className="w-full text-start items-start">
+        <p className='text-base mt-3 mb-2 md:text-lg'>
+          I'm helping startups and business owners to make a visual statement through spotless Web Design and Development so they can increase brand awareness and sell more.
+        </p>
 
-            
-                <h1 className="animate-text-gradient bg-gradient-to-r from-neutral-800 via-slate-400 to-blue-700 bg-[200%_auto] bg-clip-text landing-tight text-transparent dark:from-blue-100 dark:via-blue-400 dark:to-blue-900   text-start font-bold text-3xl md:text-4xl lg:text-6xl  sm:xl  ">
-                 <div className=' text-[18px]  sm:text-[30px] lg:text-[30px] text-black  dark:text-gray-200'>Hello! I am</div>
-                 <strong className='italic text-[30px] md:text-[50px] lg:text-[60px]'>Dayanand Gawade . <br /></strong>
-                 <span className='text-[18px]  sm:text-[30px] lg:text-[30px]  text-black dark:text-gray-200'>A Fullstack Web Developer from India</span></h1>
+        <p className='mt-4'>
+          <Myinfo />
+        </p>
 
-                
-            </div>
-            <p className="mt-4 text-base text-[11.5px] lg:text-[15px] text-gray-600  dark:text-gray-300 italic justify-evenly">
-                A full stack developer with a passion for creating modern and intuitive web applications.
-            
-            </p>
-            <div className='flex gap-3 py-6'>
-            
-            {/* <Dialog className='p-5 mr-2'>
-                <Button className="bg-black dark:bg-blue-600 hover:bg-gray-400 hover:text-white  dark:text-white  dark:hover:text-black " 
-                >
-                <DialogTrigger className='w-full'>Getin Touch</DialogTrigger>
-                <DialogContent className="dark:bg-[#131313] p-5 rounded-3xl m-auto border-transparent ">
-                    <DialogHeader>
-                    <DialogTitle>Get in touch</DialogTitle>
-                    <DialogDescription>
-                    Fill in the form to get in touch with me.
-                        <div className='text-left'>
-                        <Contact className="rounded-2xl" />
-                        </div>
-                         
-                         <div className='mt-5 text-left flex gap-5'>
-                         or 
-                         <div className='items-center gap-3 text-left flex'>
-                            <Link href="www.linkedin.com/in/dayanandgawade">
-                            <Linkedin className=' bg-transparent   text-gray-500  hover:text-blue-600' />
-                            </Link>
-                            <Link href="mailto:dayanandgawade@dayanandpvtltd.eu.org">
-                            <Mail className='bg-transparent   text-gray-500  hover:text-green-600' />
-                            </Link>
-                            <Link href="https://www.instagram.com/dayanandgawade8/">
-                            <InstagramIcon  className=' bg-transparent   text-gray-500  hover:text-orange-600'/>
-                            </Link>
-                         </div>
-                            
-                         </div>
-                         
-                    </DialogDescription>
-                    </DialogHeader>
-                </DialogContent>
-                </Button></Dialog> */}
-                <Drawer className="p-5 mr-2 items-center">
-                <DrawerTrigger className='bg-black text-white dark:bg-blue-600 hover:bg-gray-400 hover:text-white  dark:text-white  dark:hover:text-black rounded-lg p-2 '>Getin Touch</DrawerTrigger>
-                <DrawerContent className="px-3">
-                  <DrawerHeader>
-                    <DrawerTitle>Getin Touch</DrawerTitle>
-                    <DrawerDescription>This action cannot be undone.
-                      <Contact  />
-                    </DrawerDescription>
-                  </DrawerHeader>
-                  <DrawerFooter>
-                    {/* <Button>Submit</Button> */}
-                    {/* <DrawerClose>
-                      <Button variant="outline">Cancel</Button>
-                    </DrawerClose> */}
-                  </DrawerFooter>
-                </DrawerContent>
-              </Drawer>
-
-
-                <Button className="bg-transperent  dark:border-blue-500 text-gray-700 hover:bg-gray-400 hover:text-white dark:bg-transparent dark:text-blue-500 dark:hover:bg-blue-300 dark:hover:text-black flex gap-2"
-                onClick={() => {
-                    toast({
-                        title: "This Function is Not devloped yet.",
-                      description: "please try after some time.",
-                    })
-                  }}
-                  > <DownloadIcon /> Downlode Resume</Button>
-            </div>
-            </div>
-        </div>
-
-        
-    </div>
-</div>
+      </div>
+    </section>
 
   )
 }
