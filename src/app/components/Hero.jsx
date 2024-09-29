@@ -46,8 +46,8 @@ function Hero() {
 
 
   return (
-    <section className='py-10 mt-3 px-8 md:px-24 lg:px-[95px] max-w-3xl'>
-      <div className='mt-4'>
+    <section className='py-10 mt-3 px-8 md:px-24 lg:px-[95px] max-w-4xl'>
+      <div className=''>
         <p className='text-md ml-1'>Hi I am  <strong className='italic'>Dayanand Gawade</strong></p>
 
         <h1 className='font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[150px] leading-none md:-ml-2.5'>Fullstack <span className='lg:hidden block'>Developer</span> <SparklesText text='Developer' className='font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[150px] leading-none hidden lg:block ' /></h1>

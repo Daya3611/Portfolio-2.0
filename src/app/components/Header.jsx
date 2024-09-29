@@ -14,6 +14,7 @@ import { SunDimIcon } from 'lucide-react';
 import { ModeToggle } from '@/components/ui/ModeToggel';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Themeswitcher from '@/components/ui/theme-swicher';
 
 export const animatedBorderClass = "before:content-[''] hover:before:left-auto hover:before:right-0 hover:before:left-auto hover:before:duration-300 before:h-[1.5px] before:bg-primary before:w-0 hover:before:w-full before:transition-all before:absolute relative before:left-0 before:-bottom-0.5"
 
@@ -42,7 +43,7 @@ function Header() {
       </div>
 
       <div className='ml-auto'>
-        <ModeToggle />
+        <Themeswitcher />
       </div>
     </header >
   );

@@ -33,7 +33,7 @@ export default function Footer() {
                     <Link href="mailto:hi@dayanandgawade.in" className={"text-sm " + animatedBorderClass}>Email</Link>
                     <Link href="https://www.linkedin.com/in/dayanandgawade" className={"text-sm " + animatedBorderClass}>Linkedin</Link>
                 </div>
-                <p className="text-sm mt-3">© {new Date().getFullYear()} All right reserved. Coded with ❤ by <Link href="https://github.com/Daya3611" className={animatedBorderClass}>Daya3611</Link></p>
+                <p className="text-sm mt-3">© {new Date().getFullYear()} All right reserved. Coded with ❤️ by <Link href="https://github.com/Daya3611" className={animatedBorderClass}>Daya3611</Link></p>
             </div>
         </footer>
     )
