@@ -48,7 +48,7 @@ function Hero() {
   return (
     <section className='py-10 mt-3 px-[95px] max-w-3xl'>
       <div className='mt-4'>
-        <h1 className='font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[150px] leading-none md:-ml-2.5'>Fullstack <SparklesText text='Developer' className='' /></h1>
+        <h1 className='font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[150px] leading-none md:-ml-2.5'>Fullstack <SparklesText text='Developer' className='font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[150px] leading-none md:-ml-2.5' /></h1>
 
         <p className='mt-3 text-sm md:text-base  text-muted-foreground'>Specialized in Web Design, UX / UI, Backend Development, and Front End Development.</p>
 
