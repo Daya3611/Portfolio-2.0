@@ -11,11 +11,11 @@ export default function Footer() {
     return (
         <footer className="px-6 md:px-20 lg:px-24">
             {page == "/" && (
-                <div className="grid gap-5 md:flex md:items-end md:justify-between">
+                <div className="grid gap-5 md:flex md:items-end md:justify-between mt-3">
                     <h1 className="text-4xl md:text-6xl max-w-3xl relative">
                         <div className="absolute left-0 -top-1.5 md:-top-0">
                             <div className="relative w-12 h-12 md:w-14 md:h-14">
-                                <div className="h-2.5 w-2.5 rounded-full absolute right-0.5 top-0.5 bg-yellow-300"></div>
+                                <div className="h-2.5 w-2.5 rounded-full absolute right-0.5 top-0.5 bg-green-300"></div>
                                 <img src="./profile.png" className="h-12 md:h-14 w-12 md:min-w-14 rounded-full" />
                             </div>
                         </div>

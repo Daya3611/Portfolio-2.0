@@ -2,10 +2,10 @@ import Link from 'next/link'
 import React from 'react'
 
 
-const project = [
+export const project = [
     {
         title: 'URL Shortener',
-        description: 'ShortURL allows to shorten long links from Instagram',
+        description: 'A full-stack application that provides a streamlined, efficient way to shorten URLs. Built with Next.js and Node.js, the app offers customizable links and analytics for tracking user engagement.',
         link: 'https://miniurl.dayanandgawade.in',
     },
     {
@@ -15,7 +15,7 @@ const project = [
     },
     {
         title: 'MusicHub',
-        description: 'MusicHub is a music player app that allows you to listen to your favorite music online',
+        description: 'Developed a responsive, interactive music app with React and Node.js. The app features a clean interface, playlist management, and a recommendation system based on user preferences.',
         link: 'https://musichub.dayanandgawade.in'
     },
     {
