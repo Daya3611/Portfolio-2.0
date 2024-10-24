@@ -23,7 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
          <script
           dangerouslySetInnerHTML={{
@@ -55,7 +55,10 @@ export default function RootLayout({ children }) {
       <body className={bricolage_grotesque.className}>
       <ThemeProvider enableSystem={true} attribute="class" defaultTheme="system">
         <Header/>
+        
         {children}
+        
+        
       
           <Footer/>
         </ThemeProvider>

@@ -85,4 +85,5 @@ body {
 
 html {
   scroll-behavior: smooth;
+  transition: all 2.5s ease-in-out;
 }
