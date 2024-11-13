@@ -1,3 +1,4 @@
+import { ArrowBigLeftDashIcon, ArrowUpRightFromCircle, ArrowUpRightFromSquareIcon, LibraryIcon, Link2Icon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -34,12 +35,16 @@ export default function Projects() {
 
     return (
         <section className='px-8 md:px-24 lg:px-24 mt-28 -mb-6' id='projects'>
-            <h1 className='text-4xl font medium'>Selected Work <span className='text-base text-muted-foreground'>(4)</span></h1>
+            <h1 className='text-4xl font medium'>Selected Work 
+                <span className='text-base text-muted-foreground ml-2 '>
+                    ({project.length})
+                </span>
+            </h1>
             {project.map((item, index) => (
                 <div key={index} className='mt-10'>
 
-                    <Link href={item.link} className='py-5 -mt-3 -mb-8 border-b grid'>
-                        <h1 className='text-xl'>{item.title}</h1>
+                    <Link href={item.link} className='py-5 -mt-3 -mb-8 border-b grid hover:font-bold'>
+                        <p className='flex gap-2'><h1 className='text-xl '>{item.title}</h1> <ArrowUpRightFromSquareIcon className='h-5 w-5 text-gray-500'/> </p>
                         <p className='text-muted-foreground text-sm mt-1'>{item.description}</p>
 
                     </Link>
