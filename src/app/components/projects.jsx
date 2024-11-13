@@ -26,7 +26,7 @@ export const project = [
     {
         title: 'File Shareing Site',
         description: 'Share File By using URL',
-        link: 'https://yt.dayanandgawade.in'
+        link: 'https://file-share-site-ten.vercel.app'
     },
 ]
 
