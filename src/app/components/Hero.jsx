@@ -46,7 +46,7 @@ function Hero() {
 
 
   return (
-    <section className='py-10 mt-3 px-8 md:px-24 lg:px-[95px] max-w-4xl'>
+    <section className='py-10 mt-3 px-8 md:px-24 lg:px-[95px] max-w-4xl md:flex'>
       <div className=''>
         <p className='text-md md:text-lg ml-1'>Hi I am  <strong className='italic'>Dayanand Gawade</strong></p>
 
@@ -61,7 +61,11 @@ function Hero() {
         <p className='mt-4'>
           <Myinfo />
         </p>
+      
+      </div>
 
+      <div>
+        
       </div>
     </section>
 

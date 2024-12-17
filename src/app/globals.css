@@ -83,7 +83,20 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-html {
+body , .btn {
   scroll-behavior: smooth;
-  transition: all 2.5s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+/* selction text */
+/* for chorme */
+::selection {
+  background-color: #3e4d56; 
+  color: #ffffff; 
+
+}
+/* fireFox */
+::-moz-selection {
+  background-color: #ff4b82;
+  color: #ffffff;
 }

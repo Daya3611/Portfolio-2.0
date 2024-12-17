@@ -14,12 +14,12 @@ import Link from 'next/link'
 
 function Myinfo() {
     return (
-        <div>
+        <div >
 
 
             <Dialog >
                 <DialogTrigger>
-                    <Button className='flex gap-3 rounded-3xl px-8 py-6 text-md'>
+                    <Button className='btn flex gap-3 rounded-3xl px-8 py-6 text-md'>
                         Get in touch <ArrowUpRight className='w-5 h-5' />
                     </Button>
                 </DialogTrigger>

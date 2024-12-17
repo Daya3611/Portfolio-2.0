@@ -43,7 +43,7 @@ export default function Projects() {
             {project.map((item, index) => (
                 <div key={index} className='mt-10'>
 
-                    <Link href={item.link} className='py-5 -mt-3 -mb-8 border-b grid hover:font-bold'>
+                    <Link href={item.link} className='py-5 -mt-3 -mb-8 border-b grid hover:font-bold transition-all'>
                         <p className='flex gap-2'><h1 className='text-xl '>{item.title}</h1> <ArrowUpRightFromSquareIcon className='h-5 w-5 text-gray-500'/> </p>
                         <p className='text-muted-foreground text-sm mt-1'>{item.description}</p>
 
