@@ -97,6 +97,14 @@ body , .btn {
 }
 /* fireFox */
 ::-moz-selection {
-  background-color: #ff4b82;
+  background-color: #3e4d56;
   color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#projects {
+  scroll-behavior: smooth; /* Smooth scrolling for a specific ID */
 }

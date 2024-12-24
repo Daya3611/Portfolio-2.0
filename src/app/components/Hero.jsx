@@ -27,7 +27,7 @@ import {
 
 
 import Contact from '../olds/Contact';
-import { DownloadIcon, Instagram, InstagramIcon, Linkedin, Mail } from 'lucide-react';
+import { DownloadIcon, Github, Instagram, InstagramIcon, Linkedin, Mail } from 'lucide-react';
 import Link from 'next/link';
 import Myinfo from './Myinfo';
 import SparklesText from '@/components/ui/sparkles-text';
@@ -58,8 +58,14 @@ function Hero() {
           I'm helping startups and business owners to make a visual statement through spotless Web Design and Development so they can increase brand awareness and sell more.
         </p>
 
-        <p className='mt-4'>
+        <p className=' flex gap-3 items-center mt-4'>
           <Myinfo />
+          <Link href='https://github.com/sponsors/Daya3611?o=esb'>
+            <Button className='btn flex gap-3 rounded-3xl px-8 py-6 text-md bg-white text-black dark:bg-black dark:text-white  border-black dark:border-white border-[2px] hover:bg-black hover:text-white hover:border-transparent'>
+              Sponsor On  <Github/>
+            </Button>
+          </Link>
+          {/* <iframe src="https://github.com/sponsors/Daya3611/button" title="Sponsor Daya3611" height="32" width="114" ></iframe> */}
         </p>
       
       </div>

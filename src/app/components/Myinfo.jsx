@@ -17,14 +17,14 @@ function Myinfo() {
         <div >
 
 
-            <Dialog >
+            <Dialog className="" >
                 <DialogTrigger>
-                    <Button className='btn flex gap-3 rounded-3xl px-8 py-6 text-md'>
+                    <Button className='btn flex gap-3 rounded-3xl px-8 py-6  border-[2px] text-md hover:bg-white hover:text-black hover:border-black dark:hover:bg-black dark:hover:text-white '>
                         Get in touch <ArrowUpRight className='w-5 h-5' />
                     </Button>
                 </DialogTrigger>
-                <DialogContent >
-                    <DialogHeader className=''>
+                <DialogContent className="bg-gray-300 text-black dark:bg-black dark:text-white">
+                    <DialogHeader className='bg-gray-300 text-black dark:bg-black dark:text-white'>
                         <DialogTitle className='flex gap-3 items-center'>Get in touch <Mail className='w-5 h-5' /></DialogTitle>
                         <DialogDescription >
                             <p className='text-justify mt-2 mb-2'>Contact me with email or instagram and I'll get back to you as soon as possible.</p>
@@ -37,6 +37,7 @@ function Myinfo() {
                                 <Link href='https://instagram.com/_daya3611'>
                                     <Button className='flex gap-2 rounded-3xl'><Instagram className='w-5 h-5' /> _daya3611</Button>
                                 </Link>
+                                
 
                             </div>
                         </DialogDescription>

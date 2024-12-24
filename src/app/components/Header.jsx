@@ -40,6 +40,10 @@ function Header() {
         <Link href='/experience'>
           <p className={animatedBorderClass}>Experience</p>
         </Link>
+
+        <Link href='/resume'>
+          <p className={animatedBorderClass}>Resume</p>
+        </Link>
       </div>
 
       <div className='ml-auto'>

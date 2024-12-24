@@ -43,7 +43,7 @@ export default function Projects() {
             {project.map((item, index) => (
                 <div key={index} className='mt-10'>
 
-                    <Link href={item.link} className='py-5 -mt-3 -mb-8 border-b grid hover:font-bold transition-all'>
+                    <Link href={item.link} className='py-5 -mt-3 -mb-8 border-b grid hover:text-gray-400 dark:hover:text-gray-500 transition-all'>
                         <p className='flex gap-2'><h1 className='text-xl '>{item.title}</h1> <ArrowUpRightFromSquareIcon className='h-5 w-5 text-gray-500'/> </p>
                         <p className='text-muted-foreground text-sm mt-1'>{item.description}</p>
 
@@ -51,8 +51,28 @@ export default function Projects() {
 
                 </div>
             ))}
+
+            {/* <div className='grid grid-cols-3 bg-gray-600 gap-3  items-center text-center '>
+                <div className='rounded-2xl bg-black'>sdsd</div>
+                <div>sdsd</div>
+                <div>sdsd</div>
+                <div>sdsd</div>
+                <div>sdsd</div>
+                <div>sdsd</div>
+            </div> */}
         </section>
     )
 }
 
 
+// {project.map((item, index) => (
+//     <div key={index} className='mt-10'>
+
+//         <Link href={item.link} className='py-5 -mt-3 -mb-8 border-b grid hover:font-bold transition-all'>
+//             <p className='flex gap-2'><h1 className='text-xl '>{item.title}</h1> <ArrowUpRightFromSquareIcon className='h-5 w-5 text-gray-500'/> </p>
+//             <p className='text-muted-foreground text-sm mt-1'>{item.description}</p>
+
+//         </Link>
+
+//     </div>
+// ))}
