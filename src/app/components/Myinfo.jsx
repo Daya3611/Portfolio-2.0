@@ -19,7 +19,7 @@ function Myinfo() {
 
             <Dialog className="" >
                 <DialogTrigger>
-                    <Button className='btn flex gap-3 rounded-3xl px-8 py-6  border-[2px] text-md hover:bg-white hover:text-black hover:border-black dark:hover:bg-black dark:hover:text-white '>
+                    <Button className='btn flex gap-3 rounded-3xl px-4 py-3 text-sm md:px-8 md:py-6 md:text-md bg-black text-white dark:bg-white dark:text-black border-white dark:border-black border-[2px] hover:bg-white hover:text-black hover:border-transparent'>
                         Get in touch <ArrowUpRight className='w-5 h-5' />
                     </Button>
                 </DialogTrigger>

@@ -58,15 +58,19 @@ function Hero() {
           I'm helping startups and business owners to make a visual statement through spotless Web Design and Development so they can increase brand awareness and sell more.
         </p>
 
-        <p className=' flex gap-3 items-center mt-4'>
+        <div className='flex gap-3 items-center mt-4'>
+          <span>
           <Myinfo />
+          </span>
+          <span>
           <Link href='https://github.com/sponsors/Daya3611?o=esb'>
-            <Button className='btn flex gap-3 rounded-3xl px-8 py-6 text-md bg-white text-black dark:bg-black dark:text-white  border-black dark:border-white border-[2px] hover:bg-black hover:text-white hover:border-transparent'>
+            <Button className='btn flex gap-3 rounded-3xl px-4 py-3 text-sm md:px-8 md:py-6 md:text-md bg-white text-black dark:bg-black dark:text-white border-black dark:border-white border-[2px] hover:bg-black hover:text-white hover:border-transparent'>
               Sponsor On  <Github/>
             </Button>
           </Link>
+          </span>
           {/* <iframe src="https://github.com/sponsors/Daya3611/button" title="Sponsor Daya3611" height="32" width="114" ></iframe> */}
-        </p>
+        </div>
       
       </div>
 
@@ -74,7 +78,6 @@ function Hero() {
         
       </div>
     </section>
-
   )
 }
 
