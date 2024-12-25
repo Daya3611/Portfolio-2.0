@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         showAtBottom={false}
         />
       <body className={bricolage_grotesque.className}>
-      <ThemeProvider enableSystem={true} attribute="class" defaultTheme="system">
+      <ThemeProvider enableSystem={true} attribute="class" defaultTheme="system" disableTransitionOnChange>
         <Header/>
         
         {children}
