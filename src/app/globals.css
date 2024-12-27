@@ -76,16 +76,21 @@ body {
 
   body {
     @apply bg-background text-foreground;
+    
   }
 }
 
 .animt {
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
 }
 
-body , .btn {
+body {
+  transition: all 2.5s ease-in-out;
+}
+
+.btn {
   scroll-behavior: smooth;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 /* selction text */
@@ -103,6 +108,7 @@ body , .btn {
 
 html {
   scroll-behavior: smooth;
+  /* transition: all 2.5s ease-in-out; */
 }
 
 #projects {
