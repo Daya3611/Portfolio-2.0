@@ -6,28 +6,28 @@ import React from 'react'
 export const project = [
     {
         title: 'URL Shortener',
-        description: 'A full-stack application that provides a streamlined, efficient way to shorten URLs. Built with Next.js and Node.js, the app offers customizable links and analytics for tracking user engagement.',
+        description: 'A simple app to shorten URLs, built with Next.js and Node.js. It offers customizable links and user engagement analytics.',
         link: 'https://miniurl.dayanandgawade.in',
     },
     {
         title: 'Tailwind CSS Bg Gradient',
-        description: 'Tailwind CSS Background Gradient Plugin',
+        description: 'A plugin for Tailwind CSS to create background gradients.',
         link: 'https://tailwind-bg-tawny.vercel.app/',
     },
     {
         title: 'MusicHub',
-        description: 'Developed a responsive, interactive music app with React and Node.js. The app features a clean interface, playlist management, and a recommendation system based on user preferences.',
+        description: 'A responsive music app built with React and Node.js. Features include playlist management and a recommendation system.',
         link: 'https://musichub.dayanandgawade.in'
     },
     {
         title: 'YouTube Clone',
-        description: 'Building a YouTube Clone with the YouTube Data API v3',
+        description: 'A clone of YouTube using the YouTube Data API v3.',
         link: 'https://yt.dayanandgawade.in'
     },
     {
-        title: 'File Shareing Site',
-        description: 'Share File By using URL',
-        link: 'https://shd3.vercel.app'
+        title: 'Cloud Storage WebApp',
+        description: 'An app to upload and access files from anywhere.',
+        link: 'https://skybox.dayanandgawade.in/'
     },
 ]
 
