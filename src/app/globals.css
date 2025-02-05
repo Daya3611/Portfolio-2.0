@@ -42,8 +42,8 @@ body {
   }
  
   .dark {
-    --background: 180 8% 7%;
-    --foreground: 0 0% 94%;
+    --background: 188 0% 0%;
+    --foreground: 188 0% 100%;
     --card: 180 8% 7%;
     --card-foreground: 0 0% 98%;
     --popover: 180 8% 7%;
@@ -90,7 +90,7 @@ body {
 
 .btn {
   scroll-behavior: smooth;
-  transition: all 1s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 /* selction text */
