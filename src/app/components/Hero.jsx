@@ -5,6 +5,8 @@ import Typewriter from "typewriter-effect";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
+
+import { motion } from "framer-motion";
 import {
   Drawer,
   DrawerClose,
@@ -52,12 +54,15 @@ function Hero() {
           Hi I am <strong className="italic">Dayanand Gawade</strong>
         </p>
 
-        <h1 className="font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[100px] leading-none md:-ml-2.5">
-          Fullstack <span className="lg:hidden block">Developer</span>{" "}
-          <SparklesText
+        <h1 className="font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[100px] leading-none md:-ml-2.5 bg-gradient-to-r from-neutral-400 via-neutral-800 to-black dark:to-neutral-700 bg-clip-text text-transparent">
+          Fullstack{" "}
+          <span className="font-bold text-[60px] sm:text-[80px] md:text-[90px] lg:text-[110px] ">
+            Developer
+          </span>{" "}
+          {/* <SparklesText
             text="Developer"
             className="font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[110px] leading-none hidden lg:block "
-          />
+          /> */}
         </h1>
 
         <p className="mt-3 text-sm md:text-sm text-muted-foreground">
@@ -71,16 +76,21 @@ function Hero() {
           awareness and sell more.
         </p>
 
-        <div className="flex gap-3 items-center mt-4">
+        <div className=" flex gap-3 items-center mt-4">
           <Myinfo />
 
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            className="box"
+          >
             <Link href="https://github.com/sponsors/Daya3611?o=esb">
               <Button className="btn flex gap-3 rounded-3xl px-4 py-2 text-sm md:px-7 md:py-4 md:text-sm bg-white text-black  dark:text-white border-[#c6c6c6] bg-transparent hover:bg-[#a8a8a8] dark:border-[#2a2a2a] border-[1px] hover:text-white hover:border-transparent dark:hover:bg-[#2a2a2a]">
                 Sponsor Me
               </Button>
             </Link>
-          </div>
+          </motion.div>
           {/* <iframe src="https://github.com/sponsors/Daya3611/button" title="Sponsor Daya3611" height="32" width="114" ></iframe> */}
         </div>
       </div>
