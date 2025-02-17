@@ -56,7 +56,7 @@ function Hero() {
           Hi I am <strong className="italic">Dayanand Gawade</strong>
         </p>
 
-        <h1 className="font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[100px] leading-none md:-ml-2.5 bg-gradient-to-r from-neutral-400 via-neutral-800 to-black dark:to-neutral-700 bg-clip-text text-transparent">
+        <h1 className="font-medium text-[60px] sm:text-[80px] md:text-[90px] lg:text-[100px] leading-none md:-ml-2.5 bg-gradient-to-r from-neutral-400 via-neutral-800 to-black dark:via-neutral-200 dark:to-neutral-200 bg-clip-text text-transparent">
           Fullstack{" "}
           <span className="font-bold text-[60px] sm:text-[80px] md:text-[90px] lg:text-[110px] ">
             Developer
