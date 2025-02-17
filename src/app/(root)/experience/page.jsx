@@ -1,3 +1,4 @@
+"use client"
 import { project } from "@/app/components/projects";
 import SparklesText from "@/components/ui/sparkles-text";
 
