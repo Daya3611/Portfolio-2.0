@@ -57,11 +57,11 @@ export default function Projects() {
           transition={{ type: "spring" }}
           viewport={{ once: true, amount: 0.5 }}
           key={index}
-          className="mt-10 "
+          className="box "
         >
           <Link
             href={item.link}
-            className="py-6 px-4 -mt-3 -mb-8 border-b flex flex-col h-[100px] dark:bg-neutral-900 bg-neutral-100 hover:text-gray-400 dark:hover:text-gray-500 transition-all rounded-3xl"
+            className="py-5 px-5  flex flex-col h-[100px] dark:bg-neutral-900 bg-neutral-100 hover:bg-[#cecece] dark:hover:bg-[#252525] transition-all rounded-3xl "
           >
             <p className="flex gap-2">
               <h1 className="text-xl ">{item.title}</h1>{" "}

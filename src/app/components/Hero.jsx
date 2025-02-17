@@ -44,7 +44,9 @@ function Hero() {
   const { toast } = useToast();
   const [state, setState] = useState();
   useEffect(() => {
-    // Effect logic
+    setTimeout(function () {
+      document.getElementById("delayedDiv").style.display = "block";
+    }, 1000); // 3000 ms = 3 seconds
   }, []);
 
   return (
@@ -76,9 +78,7 @@ function Hero() {
           awareness and sell more.
         </p>
 
-        <div className=" flex gap-3 items-center mt-4">
-          <Myinfo />
-
+        <div className="flex gap-3 items-center mt-4">
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -91,7 +91,19 @@ function Hero() {
               </Button>
             </Link>
           </motion.div>
-          {/* <iframe src="https://github.com/sponsors/Daya3611/button" title="Sponsor Daya3611" height="32" width="114" ></iframe> */}
+          <motion.div
+            id="delayedDiv"
+            className="hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 3,  // Duration of the fade-in
+              delay: 1,      // Delay before starting the fade-in (1 second)
+              ease: 'easeInOut'  // Smooth easing effect
+            }}
+          >
+            <Myinfo />
+          </motion.div>
         </div>
       </div>
 
