@@ -81,16 +81,26 @@ body {
 }
 
 .animt {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 body {
-  transition: all 2.5s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .btn {
   scroll-behavior: smooth;
   transition: all .25s ease-in-out;
+}
+
+.lod{
+  scroll-behavior: smooth;
+  transition: all 1.7s ease-in-out;
+}
+
+.lod-projects{
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-in-out;
 }
 
 /* selction text */

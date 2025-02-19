@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   ArrowBigLeftDashIcon,
   ArrowUpRightFromCircle,
@@ -50,29 +50,31 @@ export default function Projects() {
         </span>
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 mt-4 gap-3">
-      {project.map((item, index) => (
-        <motion.div
-          initial={{ opacity: 0, y: -10, scale: 0.9 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ type: "spring" }}
-          viewport={{ once: true, amount: 0.5 }}
-          key={index}
-          className="box "
-        >
-          <Link
-            href={item.link}
-            className="py-5 px-5  flex flex-col h-[100px] dark:bg-neutral-900 bg-neutral-100 hover:bg-[#cecece] dark:hover:bg-[#252525] transition-all rounded-3xl "
+        {project.map((item, index) => (
+          <motion.div
+            initial={{ opacity: 0, y: -10, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ type: "spring" }}
+            viewport={{ once: true, amount: 0.5 }}
+            key={index}
+            className="box "
           >
-            <p className="flex gap-2">
-              <h1 className="text-xl ">{item.title}</h1>{" "}
-              <ArrowUpRightFromSquareIcon className="h-5 w-5 text-gray-500" />{" "}
-            </p>
-            <p className="text-muted-foreground text-[12px] mt-1">
-              {item.description}
-            </p>
-          </Link>
-        </motion.div>
-      ))}
+            <Link
+              href={item.link}
+              className="lod-projects py-5 px-5  flex flex-col h-full dark:bg-neutral-900 bg-neutral-100 hover:bg-[#cecece] dark:hover:bg-[#252525] transition-all rounded-3xl "
+            >
+              <div className="flex flex-col">
+                <p className="flex gap-2">
+                  <h1 className="text-xl ">{item.title}</h1>{" "}
+                  <ArrowUpRightFromSquareIcon className="h-5 w-5 text-gray-500" />{" "}
+                </p>
+                <p className="text-muted-foreground text-[12px] mt-1 mb-2">
+                  {item.description}
+                </p>
+              </div>
+            </Link>
+          </motion.div>
+        ))}
       </div>
 
       {/* <div className='grid grid-cols-3 bg-gray-600 gap-3  items-center text-center '>

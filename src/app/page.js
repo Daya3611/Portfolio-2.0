@@ -16,6 +16,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Section />
+      <Skills />
       <Projects />
       <Fetuter />
 

@@ -21,7 +21,7 @@ export default function Section() {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className="box"
         >
-          <div className="box flex flex-col gap-1 hover:bg-[#cecece] dark:hover:bg-[#252525] md:ml-2 md:px-2 py-3 md:py-0 md:mt-0 mt-3 md:border-b-0 border-b dark:bg-neutral-900 bg-neutral-100  rounded-3xl items-center text-center w-full transition-all duration-300 ">
+          <div className="lod box flex flex-col gap-1 hover:bg-[#cecece] dark:hover:bg-[#252525] md:ml-2 md:px-2 py-3 md:py-0 md:mt-0 mt-3 md:border-b-0 border-b dark:bg-neutral-900 bg-neutral-100  rounded-3xl items-center text-center w-full transition-all duration-300 ">
             <div className="mb-7">
               <h2 className="mt-7 text-xl">Design</h2>
               <p className="text-muted-foreground text-sm px-5">
@@ -38,7 +38,7 @@ export default function Section() {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className="box"
         >
-          <div className="box flex flex-col gap-1 hover:bg-[#cecece] dark:hover:bg-[#252525] md:ml-2 md:px-2 py-3 md:py-0 md:mt-0 mt-3 md:border-b-0 border-b dark:bg-neutral-900 bg-neutral-100  rounded-3xl items-center text-center w-full transition-all duration-300  ">
+          <div className="lod box flex flex-col gap-1 hover:bg-[#cecece] dark:hover:bg-[#252525] md:ml-2 md:px-2 py-3 md:py-0 md:mt-0 mt-3 md:border-b-0 border-b dark:bg-neutral-900 bg-neutral-100  rounded-3xl items-center text-center w-full transition-all duration-300  ">
             <div className="mb-7">
               <h2 className="mt-7 text-xl">Development</h2>
               <p className="text-muted-foreground text-sm px-5">
@@ -55,7 +55,7 @@ export default function Section() {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className="box"
         >
-          <div className="box flex flex-col gap-1 hover:bg-[#cecece] dark:hover:bg-[#252525] md:ml-2 md:px-2 py-3 md:py-0 md:mt-0 mt-3 md:border-b-0 border-b dark:bg-neutral-900 bg-neutral-100  rounded-3xl items-center text-center w-full transition-all duration-300 ">
+          <div className="lod box flex flex-col gap-1 hover:bg-[#cecece] dark:hover:bg-[#252525] md:ml-2 md:px-2 py-3 md:py-0 md:mt-0 mt-3 md:border-b-0 border-b dark:bg-neutral-900 bg-neutral-100  rounded-3xl items-center text-center w-full transition-all duration-300 ">
             <div className="mb-7">
               <h2 className="mt-7 text-xl">The Full Package</h2>
               <p className="text-muted-foreground px-5 text-sm">
@@ -70,6 +70,18 @@ export default function Section() {
   );
 }
 
+const skillimg = [
+  {
+    name:"d",
+    img:"dd"
+  }
+]
+
 export function Skills() {
-  return <div></div>;
+  return (
+    <div>
+      {/* dsd
+      <div>sdffdfj</div> */}
+    </div>
+  );
 }

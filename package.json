@@ -28,6 +28,7 @@
     "nextjs-toploader": "^3.6.15",
     "react": "^18",
     "react-dom": "^18",
+    "react-scroll": "^1.9.2",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "typewriter-effect": "^2.21.0",
