@@ -9,6 +9,7 @@ import {
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export const project = [
   {
@@ -16,27 +17,31 @@ export const project = [
     description:
       "A simple app to shorten URLs, built with Next.js and Node.js. It offers customizable links and user engagement analytics.",
     link: "https://miniurl.dayanandgawade.in",
+    img: '/projects/miniurl.png'
   },
   {
     title: "Tailwind CSS Bg Gradient",
     description: "A plugin for Tailwind CSS to create background gradients.",
     link: "https://tailwind-bg-tawny.vercel.app/",
+    img: '/projects/tailwind.png'
   },
   {
     title: "MusicHub",
     description:
       "A responsive music app built with React and Node.js. Features include playlist management and a recommendation system.",
     link: "https://musichub.dayanandgawade.in",
+    img: '/projects/musichub.png'
   },
-  {
-    title: "YouTube Clone",
-    description: "A clone of YouTube using the YouTube Data API v3.",
-    link: "https://yt.dayanandgawade.in",
-  },
+  // {
+  //   title: "YouTube Clone",
+  //   description: "A clone of YouTube using the YouTube Data API v3.",
+  //   link: "https://yt.dayanandgawade.in",
+  // },
   {
     title: "Cloud Storage WebApp",
     description: "An app to upload and access files from anywhere.",
     link: "https://skybox.dayanandgawade.in/",
+    img: '/projects/skybox.png'
   },
 ];
 
@@ -62,41 +67,29 @@ export default function Projects() {
             <Link
               href={item.link}
               className="lod-projects py-5 px-5  flex flex-col h-full dark:bg-neutral-900 bg-neutral-100 hover:bg-[#cecece] dark:hover:bg-[#252525] transition-all rounded-3xl "
+              target="_blank"
             >
-              <div className="flex flex-col">
-                <p className="flex gap-2">
-                  <h1 className="text-xl ">{item.title}</h1>{" "}
-                  <ArrowUpRightFromSquareIcon className="h-5 w-5 text-gray-500" />{" "}
-                </p>
-                <p className="text-muted-foreground text-[12px] mt-1 mb-2">
-                  {item.description}
-                </p>
+              <div className="flex gap-4 items-center">
+                <div className="max-w-[100px] flex items-center justify-center -py-5 -px-5">
+                  <Image src={item.img} width={150} height={150} alt="txt" className="object-fit rounded-2xl" />
+                </div>
+
+                <div className="flex flex-col">
+                  <p className="flex gap-2">
+                    <h1 className="text-xl ">{item.title}</h1>{" "}
+                    {/* <ArrowUpRightFromSquareIcon className="h-5 w-5 text-gray-500" />{" "} */}
+                  </p>
+                  <p className="text-muted-foreground text-[12px] mt-1 mb-2">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </Link>
           </motion.div>
         ))}
       </div>
 
-      {/* <div className='grid grid-cols-3 bg-gray-600 gap-3  items-center text-center '>
-                <div className='rounded-2xl bg-black'>sdsd</div>
-                <div>sdsd</div>
-                <div>sdsd</div>
-                <div>sdsd</div>
-                <div>sdsd</div>
-                <div>sdsd</div>
-            </div> */}
+   
     </section>
   );
 }
-
-// {project.map((item, index) => (
-//     <div key={index} className='mt-10'>
-
-//         <Link href={item.link} className='py-5 -mt-3 -mb-8 border-b grid hover:font-bold transition-all'>
-//             <p className='flex gap-2'><h1 className='text-xl '>{item.title}</h1> <ArrowUpRightFromSquareIcon className='h-5 w-5 text-gray-500'/> </p>
-//             <p className='text-muted-foreground text-sm mt-1'>{item.description}</p>
-
-//         </Link>
-
-//     </div>
-// ))}
