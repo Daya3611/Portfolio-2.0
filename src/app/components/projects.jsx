@@ -71,13 +71,13 @@ export default function Projects() {
             >
               <div className="flex gap-4 items-center">
                 <div className="max-w-[100px] flex items-center justify-center -py-5 -px-5">
-                  <Image src={item.img} width={150} height={150} alt="txt" className="object-fit rounded-2xl" />
+                  <Image src={item.img} width={150} height={150} alt="txt" className="object-fit  rounded-2xl" />
                 </div>
 
                 <div className="flex flex-col">
                   <p className="flex gap-2">
                     <h1 className="text-xl ">{item.title}</h1>{" "}
-                    {/* <ArrowUpRightFromSquareIcon className="h-5 w-5 text-gray-500" />{" "} */}
+                    {/* <ArrowUpRightFromSquareIcon className="h-5 w-5 text-gray-500" />{"a "} */}
                   </p>
                   <p className="text-muted-foreground text-[12px] mt-1 mb-2">
                     {item.description}
