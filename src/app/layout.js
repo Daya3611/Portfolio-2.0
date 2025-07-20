@@ -16,7 +16,7 @@ export const metadata = {
   title: "Dayanand Gawade",
   description: "Devloper Portfolio of Dayanand Gawade",
   icons:{
-    icon: ['./profile.png']
+    icon: ['./dayanand.webp']
   }
 };
 

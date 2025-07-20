@@ -40,9 +40,9 @@ const journey = [
   },
   {
     phase: "Innovation",
-    title: "Agency Launch",
-    description: "Building a web development agency for custom solutions",
-    year: "2024",
+    title: "Startup Launch",
+    description: "Launch a natural product delivery startup with Rich Royal Farm.",
+    year: "2025",
     color: "from-orange-400 to-orange-600"
   }
 ];
@@ -232,10 +232,10 @@ export default function AboutPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors hover:scale-105 transform">
+              <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors hover:scale-105 transform" onClick={() => window.location.href = "https://discord.com/users/1344659921358164052"}>
                 Get In Touch
               </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all hover:scale-105 transform">
+              <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all hover:scale-105 transform" onClick={() => window.location.href = "./#projects"}>
                 View Projects
               </button>
             </div>
