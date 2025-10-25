@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${exo.variable} antialiased bg-black`}
       >
-        <Navbar/>
+        {/* <Navbar/> */}
         {children}
       </body>
     </html>
