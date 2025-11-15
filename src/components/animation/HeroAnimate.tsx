@@ -6,7 +6,7 @@ import { EncryptedText } from "../ui/encrypted-text";
 export function HeroAnimated() {
   return (
     <BackgroundLines className="flex items-center justify-center w-full flex-col px-4 bg-black">
-      <h2 className="-m-9 text-xl">Hey, there <span className="animate-accordion-do">👋</span> I'm</h2>
+      <h2 className="-m-5 md:-m-9 text-xl">Hey, there <span className="animate-accordion-do">👋</span> I'm</h2>
       <strong className=" bg-clip-text text-transparent text-center
     bg-gradient-to-b from-white to-neutral-500
     text-6xl sm:text-4xl md:text-6xl lg:text-7xl
