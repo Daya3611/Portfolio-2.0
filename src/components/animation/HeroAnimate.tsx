@@ -13,7 +13,7 @@ export function HeroAnimated() {
     font-sans font-bold tracking-tight
     py-4 sm:py-6 md:py-10
     relative z-20">
-        Dayanand <br className="md:hidden " /> Gawade, <br /> <FlipText />
+        Dayanand <br className="md:hidden " /> Gawade <FlipText />
       </strong>
 
       <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-100 text-center">
