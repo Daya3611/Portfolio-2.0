@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Dayanand Gawade",
   description: "Portfolio of Dayanand Gawade - Full-Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
   icons: {
-    icon: "/profile.png",
+    icon: "/profile.ico",
   },
 };
 
