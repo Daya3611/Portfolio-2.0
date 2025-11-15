@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Exo,} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "next-themes";
 
 const exo = Exo({
   variable: "--font-exo-2",
@@ -26,8 +27,10 @@ export default function RootLayout({
       <body
         className={`${exo.variable} antialiased bg-black`}
       >
+        <ThemeProvider attribute="class" defaultTheme="dark">
         <Navbar/>
         {children}
+        </ThemeProvider>
       </body>
     </html>
   );

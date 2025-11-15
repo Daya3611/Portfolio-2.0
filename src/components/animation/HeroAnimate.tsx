@@ -2,6 +2,7 @@ import React from "react";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { FlipText } from "./FlipText";
 import { EncryptedText } from "../ui/encrypted-text";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 export function HeroAnimated() {
   return (
@@ -24,6 +25,17 @@ export function HeroAnimated() {
           revealDelayMs={50}
         />
       </p>
+
+      {/* <div>
+        <HoverBorderGradient
+          containerClassName="rounded-full"
+          as="button"
+          className="px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-800 font-medium
+                          hover:bg-white/15 transition"
+        >
+          Contact Me
+        </HoverBorderGradient>
+      </div> */}
     </BackgroundLines>
   );
 }

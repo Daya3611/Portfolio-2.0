@@ -8,7 +8,7 @@ import { HeroAnimated } from "./animation/HeroAnimate";
 
 export default function Hero  ()  {
     return (
-        <section className="h-screen flex gle justify-center items-center px-4">
+        <section className="h-screen flex  justify-center items-center px-4">
             <HeroAnimated />
         </section>
     );
