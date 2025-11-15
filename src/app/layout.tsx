@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Exo,} from "next/font/google";
+import { Exo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
