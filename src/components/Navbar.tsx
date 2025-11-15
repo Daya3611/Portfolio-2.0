@@ -70,7 +70,7 @@ const Navbar = () => {
           >
             <div>
               <Dialog>
-                <DialogTrigger>Contact Me - pc</DialogTrigger>
+                <DialogTrigger>Contact Me</DialogTrigger>
                 <DialogContent className="bg-neutral-900">
                   <DialogHeader>
                     <DialogTitle>Contact Me</DialogTitle>
