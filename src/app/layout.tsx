@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Exo, Geist, Geist_Mono } from "next/font/google";
+import { Exo,} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${exo.variable} antialiased bg-black`}
       >
-        {/* <Navbar/> */}
+        <Navbar/>
         {children}
       </body>
     </html>
