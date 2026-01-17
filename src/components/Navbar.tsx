@@ -30,7 +30,7 @@ import {
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50 px-2 sm:px-6">
+    <nav className="">
       <div
         className="
     w-full
@@ -165,8 +165,10 @@ const Navbar = () => {
                   <DrawerHeader>
                     <DrawerTitle className="text-left">Contact Me</DrawerTitle>
                     <DrawerDescription>
-                      <p className="text-left">Don't hesitate to reach out if you have something
-                      interesting or just want to say hi!</p>
+                      <p className="text-left">
+                        Don't hesitate to reach out if you have something
+                        interesting or just want to say hi!
+                      </p>
                       <div className="mt-3">
                         <p className="text-[12px] text-left text-neutral-200 pb-1 ">
                           Recommended

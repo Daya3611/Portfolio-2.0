@@ -28,8 +28,7 @@ export default function RootLayout({
         className={`${exo.variable} antialiased bg-black`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
-        <Navbar/>
-        {children}
+          {children}
         </ThemeProvider>
       </body>
     </html>
