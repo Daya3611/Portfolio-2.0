@@ -26,7 +26,7 @@ const projects: Project[] = [
       <p>
         Toolbox is a modern web platform providing essential utilities for
         developers including image tools, converters, validators and AI
-        helpers.  
+        helpers.
         <br />
         <br />
         Built using Next.js, Tailwind CSS and serverless APIs with optimized UX
@@ -53,7 +53,7 @@ const projects: Project[] = [
     description: "URL shortener service",
     src: "/miniurl.png",
     year: "2024",
-    category: "Web Service",
+    category: "Web  Service",
     link: "https://miniurl.dayanandgawade.in",
     content: () => (
       <p>
