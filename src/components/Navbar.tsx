@@ -84,7 +84,7 @@ const Navbar = () => {
                         <div className="pt-1 grid grid-cols-3 gap-2">
                           <Button
                             className="w-full"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/WhatsApp";
                             }}
@@ -93,7 +93,7 @@ const Navbar = () => {
                           </Button>
                           <Button
                             className="w-full"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/Discord";
                             }}
@@ -102,7 +102,7 @@ const Navbar = () => {
                           </Button>
                           <Button
                             className="w-full"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "mailto:hi@dayanandgawade.in";
                             }}
@@ -116,7 +116,7 @@ const Navbar = () => {
                         <div className="pt-1 grid grid-cols-1 gap-2 ">
                           <Button
                             className="w-full bg-black text-white border border-neutral-700 hover:bg-neutral-700"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/Instagram";
                             }}
@@ -125,7 +125,7 @@ const Navbar = () => {
                           </Button>
                           <Button
                             className="w-full bg-black text-white border border-neutral-700 hover:bg-neutral-700"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/Github";
                             }}
@@ -134,7 +134,7 @@ const Navbar = () => {
                           </Button>
                           <Button
                             className="w-full bg-black text-white border border-neutral-700 hover:bg-neutral-700"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/linkdin";
                             }}
@@ -176,7 +176,7 @@ const Navbar = () => {
                         <div className="pt-1 grid grid-cols-3 gap-2">
                           <Button
                             className="w-full"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/WhatsApp";
                             }}
@@ -185,7 +185,7 @@ const Navbar = () => {
                           </Button>
                           <Button
                             className="w-full"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/Discord";
                             }}
@@ -194,7 +194,7 @@ const Navbar = () => {
                           </Button>
                           <Button
                             className="w-full"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "mailto:hi@dayanandgawade.in";
                             }}
@@ -208,7 +208,7 @@ const Navbar = () => {
                         <div className="pt-1 grid grid-cols-1 gap-2 ">
                           <Button
                             className="w-full bg-black text-white border border-neutral-700 hover:bg-neutral-700"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/Instagram";
                             }}
@@ -217,7 +217,7 @@ const Navbar = () => {
                           </Button>
                           <Button
                             className="w-full bg-black text-white border border-neutral-700 hover:bg-neutral-700"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/Github";
                             }}
@@ -226,7 +226,7 @@ const Navbar = () => {
                           </Button>
                           <Button
                             className="w-full bg-black text-white border border-neutral-700 hover:bg-neutral-700"
-                            onClick={(e) => {
+                            onClick={(e: any) => {
                               window.location.href =
                                 "https://miniurl.dayanandgawade.in/linkdin";
                             }}
