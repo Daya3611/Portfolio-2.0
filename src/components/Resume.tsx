@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Download } from "lucide-react";
+import { IconDownload } from "@tabler/icons-react";
 
 export default function Resume() {
   return (
@@ -51,7 +51,7 @@ export default function Resume() {
             transition
           "
         >
-          <Download size={16} />
+          <IconDownload size={16} />
           Download PDF
         </a>
       </div>
