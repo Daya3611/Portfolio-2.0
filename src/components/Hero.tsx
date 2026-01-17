@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Button } from "./ui/button";
-import { Github, Linkedin, Terminal } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { HeroAnimated } from "./animation/HeroAnimate";
 import BottumNav from "./animation/BottumNav";

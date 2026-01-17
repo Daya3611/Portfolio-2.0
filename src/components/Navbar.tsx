@@ -21,13 +21,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import {
-  ArrowRightToLineIcon,
-  Link2,
-  Link2OffIcon,
-  MessageCircle,
-} from "lucide-react";
-
 const Navbar = () => {
   return (
     <nav className="">
