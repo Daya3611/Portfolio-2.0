@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
 
+
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen px-4 text-white">
