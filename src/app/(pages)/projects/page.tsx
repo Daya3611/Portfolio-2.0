@@ -99,10 +99,12 @@ export default function ProjectsPage() {
       <div className="flex flex-1 overflow-hidden">
         <aside className="hidden lg:block w-48 bg-zinc-950 border-r border-zinc-800 p-3 overflow-y-auto">
           <nav className="space-y-1">
+           <Link href='/'>
             <button className="w-full flex items-center gap-2 px-3 py-2 hover:bg-zinc-800 rounded text-sm">
               <FiHome className="w-4 h-4" />
               <span>Home</span>
             </button>
+           </Link>
             <button className="w-full flex items-center gap-2 px-3 py-2 hover:bg-zinc-800 rounded text-sm">
               <FiImage className="w-4 h-4 text-blue-400" />
               <span>Gallery</span>

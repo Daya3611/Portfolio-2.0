@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${exo.variable} antialiased bg-black`}
+        className={`edu-sa-hand-font antialiased bg-black`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}

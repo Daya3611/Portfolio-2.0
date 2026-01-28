@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -136,4 +137,11 @@
     opacity: 1;
     transform: translate(-50%, -40%) scale(1);
   }
+}
+
+.edu-sa-hand-font {
+  font-family: "Edu SA Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400 500 600 700;
+  font-style: normal;
 }
