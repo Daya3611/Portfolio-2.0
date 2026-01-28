@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -140,7 +140,7 @@
 }
 
 .edu-sa-hand-font {
-  font-family: "Edu SA Hand", cursive;
+  font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400 500 600 700;
   font-style: normal;
