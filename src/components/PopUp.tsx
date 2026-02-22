@@ -25,19 +25,19 @@ export default function PopUp({
   title,
   description,
   children,
-} : any) {
+}: any) {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   if (isDesktop) {
     return (
       <Dialog>
         <DialogTrigger asChild>{trigger}</DialogTrigger>
-        <DialogContent className="bg-neutral-900">
+        <DialogContent className="bg-neutral-900 text-white border-zinc-800 max-h-[85vh] overflow-y-auto w-full max-w-xl [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           <DialogHeader>
             <DialogTitle>{title}</DialogTitle>
-            <DialogDescription>
+            <DialogDescription className="text-zinc-400">
               {description}
-              <div className="mt-4">{children}</div>
+              <div className="mt-4 text-white overflow-x-hidden">{children}</div>
             </DialogDescription>
           </DialogHeader>
         </DialogContent>
@@ -48,12 +48,12 @@ export default function PopUp({
   return (
     <Drawer>
       <DrawerTrigger asChild>{trigger}</DrawerTrigger>
-      <DrawerContent>
+      <DrawerContent className="bg-neutral-900 border-t border-zinc-800 max-h-[90vh]">
         <DrawerHeader>
-          <DrawerTitle className="text-left">{title}</DrawerTitle>
-          <DrawerDescription>
+          <DrawerTitle className="text-left text-white">{title}</DrawerTitle>
+          <DrawerDescription className="text-zinc-400">
             {description}
-            <div className="mt-4">{children}</div>
+            <div className="mt-4 text-white overflow-y-auto max-h-[70vh] pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">{children}</div>
           </DrawerDescription>
         </DrawerHeader>
       </DrawerContent>

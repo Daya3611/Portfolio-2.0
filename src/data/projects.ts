@@ -17,7 +17,7 @@ Toolbox is a modern web platform providing essential utilities for developers.Fe
     description: "Landing page UI kit",
     src: "/skybox.png",
     year: "2025",
-    category: "UI/UX",
+    category: "Web App",
     link: "https://skybox.dayanandgawade.in",
     content: `
 Skybox UI is a premium landing page design system built for SaaS startups.Includes animations, gradients and responsive sections.

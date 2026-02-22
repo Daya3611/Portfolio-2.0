@@ -13,8 +13,7 @@ import Resume from "../Resume";
 export default function BottomNav() {
   return (
     <div className="fixed bottom-6 left-0 right-0 flex justify-center z-50">
-      <div className="flex gap-6 bg-background border px-6 py-3 rounded-full shadow-lg">
-
+      <div className="flex gap-6 bg-zinc-950 border border-zinc-800 px-6 py-3 rounded-full shadow-lg text-white">
         {/* Home normal */}
         {/* <button>
           <IconHome className="h-6 w-6" />
