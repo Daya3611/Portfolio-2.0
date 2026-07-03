@@ -1,29 +1,39 @@
-import BottumNav from "@/components/animation/BottumNav";
-import { HeroParallaxDemo } from "@/components/animation/Test";
-import { AnimatedTestimonialsDemo } from "@/components/animation/Testimonal";
-import Hero from "@/components/Hero";
+import PageLoader from "@/components/PageLoader";
+import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+
+import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
-
-
+import Achievements from "@/components/Achievements";
+import Certifications from "@/components/Certifications";
+import Services from "@/components/Services";
+import TechStack from "@/components/TechStack";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen px-4 text-white">
-      <div className="fixed top-4 left-0 right-0 z-50 md:px-[200px] px-4">
-        <Navbar />
-      </div>
-      <div className="mt-10">
-        {/* <ScrollAnimation  /> */}
-
+    <>
+      <PageLoader />
+      <ScrollProgress />
+      <Navbar />
+      <main>
         <Hero />
-        {/* <HeroParallaxDemo /> */}
-        {/* <Projects /> */}
-        {/* <AnimatedTestimonialsDemo /> */}
-        {/* <BottumNav/> */}
-      </div>
+        <About />
 
-
-    </main>
+        <Experience />
+        <Projects />
+        <Achievements />
+        {/* <Certifications /> */}
+        <Services />
+        <TechStack />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }

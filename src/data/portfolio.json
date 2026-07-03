@@ -1,0 +1,940 @@
+{
+  "achievements": [
+    {
+      "label": "Projects Shipped",
+      "value": 15,
+      "suffix": "+",
+      "icon": "Rocket",
+      "description": "Production-ready applications deployed"
+    },
+    {
+      "label": "Years of Experience",
+      "value": 3,
+      "suffix": "+",
+      "icon": "Calendar",
+      "description": "Building software professionally"
+    },
+    {
+      "label": "Technologies",
+      "value": 25,
+      "suffix": "+",
+      "icon": "Code2",
+      "description": "Languages, frameworks, and tools mastered"
+    },
+    {
+      "label": "Happy Clients",
+      "value": 10,
+      "suffix": "+",
+      "icon": "Users",
+      "description": "Satisfied clients and collaborators"
+    },
+    {
+      "label": "Hackathons",
+      "value": 5,
+      "suffix": "+",
+      "icon": "Trophy",
+      "description": "Competitive hackathons participated in"
+    },
+    {
+      "label": "GitHub Stars",
+      "value": 50,
+      "suffix": "+",
+      "icon": "Star",
+      "description": "Stars earned across open-source repositories"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "The Complete Web Developer Bootcamp",
+      "organization": "Udemy",
+      "date": "2023",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "credentialUrl": "https://udemy.com",
+      "icon": "BookOpen"
+    },
+    {
+      "name": "Machine Learning Specialization",
+      "organization": "Coursera — DeepLearning.AI",
+      "date": "2024",
+      "skills": [
+        "Python",
+        "TensorFlow",
+        "Supervised Learning",
+        "Neural Networks"
+      ],
+      "credentialUrl": "https://coursera.org",
+      "icon": "Brain"
+    },
+    {
+      "name": "Next.js & React — The Complete Guide",
+      "organization": "Udemy",
+      "date": "2023",
+      "skills": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Server Components"
+      ],
+      "credentialUrl": "https://udemy.com",
+      "icon": "Code2"
+    },
+    {
+      "name": "PostgreSQL for Everybody",
+      "organization": "Coursera",
+      "date": "2024",
+      "skills": [
+        "PostgreSQL",
+        "SQL",
+        "Database Design",
+        "Indexing"
+      ],
+      "credentialUrl": "https://coursera.org",
+      "icon": "Database"
+    },
+    {
+      "name": "Docker & Kubernetes: The Practical Guide",
+      "organization": "Udemy",
+      "date": "2024",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "Container Orchestration",
+        "DevOps"
+      ],
+      "credentialUrl": "https://udemy.com",
+      "icon": "Box"
+    },
+    {
+      "name": "Cloud Computing Fundamentals",
+      "organization": "Google Cloud Skills Boost",
+      "date": "2024",
+      "skills": [
+        "GCP",
+        "Cloud Storage",
+        "Serverless",
+        "Cloud Functions"
+      ],
+      "credentialUrl": "https://cloudskillsboost.google",
+      "icon": "Cloud"
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc DS&AI",
+      "institution": "Vidyalankar School Of Information Technology",
+      "period": "2026 — 2028",
+      "description": "Currently pursuing Master of Science in Data Science and Artificial Intelligence with a strong focus on machine learning, deep learning, and AI-driven solutions.",
+      "current": true
+    },
+    {
+      "degree": "BSc IT",
+      "institution": "Vidyalankar School Of Information Technology",
+      "period": "2023 — 2026",
+      "description": "Completed Bachelor of Science in Information Technology with a strong focus on full-stack development, cloud computing, and emerging technologies.",
+      "current": false
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Maharashtra State Board",
+      "period": "2020 — 2022",
+      "description": "Completed science stream with focus on mathematics and physics, building analytical thinking skills foundational to engineering.",
+      "current": false
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "Maharashtra State Board",
+      "period": "2020",
+      "description": "Foundation in core academics with distinction in mathematics and science subjects.",
+      "current": false
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Frontend Developer",
+      "company": "Qrapid Technologies LLP",
+      "type": "Full-Time",
+      "period": "May 2026 — Present",
+      "location": "Mumbai, India",
+      "description": "Developing and maintaining modern, responsive web applications while collaborating with cross-functional teams to deliver scalable, user-focused solutions.",
+      "responsibilities": [
+        "Develop responsive and reusable user interfaces using React.js, Next.js, and Tailwind CSS",
+        "Translate Figma designs into pixel-perfect, production-ready web applications",
+        "Integrate REST APIs and manage application state for seamless user experiences",
+        "Optimize application performance, accessibility, and cross-browser compatibility",
+        "Collaborate with designers and backend developers to implement new features and resolve issues",
+        "Participate in code reviews, debugging, testing, and deployment processes"
+      ],
+      "technologies": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "HTML5",
+        "CSS3",
+        "REST APIs",
+        "Git",
+        "GitHub"
+      ],
+      "current": true
+    },
+    {
+      "role": "Web Developer & Designer",
+      "company": "Agricart Farmers Producer Company Limited",
+      "type": "Full-Time",
+      "period": "May 2024 — May 2025",
+      "location": "India",
+      "description": "Worked on developing and maintaining responsive web applications with a focus on modern UI, e-commerce functionality, and admin management systems.",
+      "responsibilities": [
+        "Developed a responsive landing page and e-commerce website using Next.js, Tailwind CSS, and Firebase",
+        "Built an admin dashboard to manage products and customer orders",
+        "Improved website accessibility, responsiveness, and overall user experience",
+        "Integrated Firebase services for backend functionality and data management",
+        "Collaborated on feature implementation and deployment"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Firebase",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "current": false
+    }
+  ],
+  "projects": [
+    {
+      "slug": "doodhos",
+      "title": "DoodhOS — Milk Collection Center Management",
+      "description": "A modern SaaS platform for managing milk collection centers with offline support, billing, and analytics.",
+      "longDescription": "DoodhOS is a full-stack, multi-tenant SaaS platform designed for dairy and milk collection centers. It streamlines milk procurement, customer management, fat/SNF calculations, billing, payments, and reporting while supporting offline-first workflows for rural areas.",
+      "problem": "Traditional milk collection centers rely on manual registers and outdated software, resulting in billing errors, delayed payments, and inefficient operations.",
+      "solution": "A centralized cloud-based platform that automates milk collection, payment tracking, customer management, and reporting with offline capabilities and real-time synchronization.",
+      "features": [
+        "Milk collection and procurement management",
+        "Automatic fat and SNF calculation",
+        "Farmer and customer management",
+        "Daily, weekly, and monthly reports",
+        "Offline-first data synchronization",
+        "Multi-tenant architecture for multiple collection centers"
+      ],
+      "src": "/doodhos.png",
+      "year": "2026",
+      "category": [
+        "SaaS",
+        "Full Stack"
+      ],
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS"
+      ],
+      "link": "https://doodhos.dayanandgawade.in",
+      "stats": [
+        {
+          "label": "Offline",
+          "value": "Yes"
+        },
+        {
+          "label": "Multi-Tenant",
+          "value": "Supported"
+        },
+        {
+          "label": "Reports",
+          "value": "Real-time"
+        }
+      ]
+    },
+    {
+      "slug": "accrual",
+      "title": "Accrual — Smart Billing Platform",
+      "description": "A modern billing and invoicing platform for small businesses with customer management and business insights.",
+      "longDescription": "Accrual is a full-stack billing solution that helps businesses generate professional invoices, manage customers, track payments, and gain valuable business insights from a single dashboard.",
+      "problem": "Many small businesses still use paper bill books or spreadsheets, making invoicing, payment tracking, and customer management time-consuming and error-prone.",
+      "solution": "A cloud-based billing platform that simplifies invoice generation, customer management, payment tracking, and business analytics through an intuitive interface.",
+      "features": [
+        "Professional PDF invoice generation",
+        "Customer and business management",
+        "Payment tracking and reminders",
+        "Business analytics dashboard",
+        "GST-ready billing",
+        "Responsive dashboard for desktop and mobile"
+      ],
+      "src": "/accrual.png",
+      "year": "2026",
+      "category": [
+        "SaaS",
+        "Full Stack"
+      ],
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS"
+      ],
+      "link": "https://billgenrator.dayanandgawade.in/",
+      "stats": [
+        {
+          "label": "Invoices",
+          "value": "Unlimited"
+        },
+        {
+          "label": "PDF Export",
+          "value": "Supported"
+        },
+        {
+          "label": "Platform",
+          "value": "Cloud"
+        }
+      ]
+    },
+    {
+      "slug": "hirelens",
+      "title": "HireLens — AI Resume Builder",
+      "description": "AI-powered resume builder with live editor, ATS scoring, and smart content suggestions.",
+      "longDescription": "HireLens is an intelligent resume-building platform that helps job seekers craft professional, ATS-friendly resumes in minutes. It combines a smart live editor with recruiter-approved templates, instant ATS score analysis, and AI-driven content suggestions.",
+      "problem": "Job seekers struggle to create resumes that pass automated screening systems, losing opportunities before a human ever reads their application.",
+      "solution": "A unified platform that combines real-time ATS scoring, AI-powered content recommendations, and professional templates — reducing resume creation time from hours to minutes.",
+      "features": [
+        "Live preview editor with drag-and-drop sections",
+        "Instant ATS compatibility score with improvement tips",
+        "AI-powered bullet point suggestions",
+        "Multiple recruiter-approved templates",
+        "Multi-resume management dashboard",
+        "Export to PDF with pixel-perfect formatting"
+      ],
+      "src": "/hirelence.png",
+      "year": "2026",
+      "category": [
+        "AI",
+        "Full Stack",
+        "SaaS"
+      ],
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "OpenAI",
+        "PostgreSQL",
+        "Tailwind CSS"
+      ],
+      "link": "https://hirelens.dayanandgawade.in",
+      "stats": [
+        {
+          "label": "Templates",
+          "value": "12+"
+        },
+        {
+          "label": "ATS Score",
+          "value": "98%"
+        },
+        {
+          "label": "Time Saved",
+          "value": "4hrs"
+        }
+      ]
+    },
+    {
+      "slug": "skybox-platform",
+      "title": "SkyBox Cloud Storage",
+      "description": "Secure cloud storage platform with authentication, file sharing, and permission-based access control.",
+      "longDescription": "SkyBox is a full-stack cloud storage solution enabling users to upload, organize, and securely access files from anywhere. Built on Appwrite for reliable storage, database, and authentication services.",
+      "problem": "Teams needed a lightweight, self-controlled file sharing solution without the cost and complexity of enterprise storage products.",
+      "solution": "A streamlined cloud storage application with two-step OTP verification, role-based file permissions, and instant secure sharing between registered users.",
+      "features": [
+        "Two-step email OTP authentication",
+        "Permission-based file sharing between users",
+        "Drag-and-drop file uploads",
+        "File preview for images and documents",
+        "Storage usage analytics dashboard",
+        "Encrypted file transfers"
+      ],
+      "src": "/skybox.png",
+      "year": "2025",
+      "category": [
+        "Full Stack"
+      ],
+      "tags": [
+        "Next.js",
+        "Appwrite",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js"
+      ],
+      "link": "https://skybox.dayanandgawade.in",
+      "stats": [
+        {
+          "label": "Max File Size",
+          "value": "500MB"
+        },
+        {
+          "label": "Uptime",
+          "value": "99.9%"
+        },
+        {
+          "label": "Storage",
+          "value": "10GB"
+        }
+      ]
+    },
+    {
+      "slug": "toolbox-platform",
+      "title": "Toolbox — Developer Utilities",
+      "description": "Full-stack developer productivity platform with essential utilities and AI-powered tools.",
+      "longDescription": "Toolbox consolidates the most-needed developer utilities into a single, fast dashboard — from file converters and image optimizers to JSON formatters and AI-powered code helpers.",
+      "problem": "Developers constantly switch between dozens of fragmented browser tools, wasting time and risking data privacy with third-party services.",
+      "solution": "A unified, privacy-first developer toolbox that runs all utilities client-side where possible, with serverless APIs for heavy processing tasks.",
+      "features": [
+        "Image compression and format conversion",
+        "JSON / YAML / XML formatters and validators",
+        "Code beautifier for 20+ languages",
+        "AI-powered code explanation tool",
+        "Regex tester with live match highlighting",
+        "Color palette generator and contrast checker"
+      ],
+      "src": "/toolbox.png",
+      "year": "2026",
+      "category": [
+        "Full Stack",
+        "Open Source"
+      ],
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Vercel",
+        "Tailwind CSS",
+        "OpenAI"
+      ],
+      "link": "https://toolbox.dayanandgawade.in",
+      "stats": [
+        {
+          "label": "Utilities",
+          "value": "20+"
+        },
+        {
+          "label": "Languages",
+          "value": "20+"
+        },
+        {
+          "label": "Load Time",
+          "value": "<1s"
+        }
+      ]
+    },
+    {
+      "slug": "miniurl",
+      "title": "MiniURL — Link Shortener",
+      "description": "Scalable URL shortener with analytics, QR code generation, and custom slug support.",
+      "longDescription": "MiniURL is a high-performance link management service offering instant URL shortening, QR code generation, and click analytics. Built for speed with sub-50ms redirect latency.",
+      "problem": "Existing free URL shorteners are cluttered with ads, lack analytics, and don't support custom branded slugs for professional use.",
+      "solution": "A clean, ad-free link shortener with custom slugs, real-time click analytics, and QR code generation — all available without account creation.",
+      "features": [
+        "Custom slug creation for branded links",
+        "QR code generation with download options",
+        "Click analytics with geographic breakdown",
+        "Link expiry and password protection",
+        "API access for programmatic link creation",
+        "Bulk URL shortening via CSV upload"
+      ],
+      "src": "/miniurl.png",
+      "year": "2024",
+      "category": [
+        "Full Stack",
+        "Open Source"
+      ],
+      "tags": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Redis",
+        "TypeScript"
+      ],
+      "link": "https://miniurl.dayanandgawade.in",
+      "stats": [
+        {
+          "label": "Redirect Time",
+          "value": "<50ms"
+        },
+        {
+          "label": "Links Created",
+          "value": "500+"
+        },
+        {
+          "label": "Uptime",
+          "value": "99.9%"
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "title": "Full-Stack Development",
+      "description": "End-to-end web application development from database schema to polished UI — built to scale.",
+      "icon": "Layers",
+      "features": [
+        "React & Next.js applications",
+        "RESTful & GraphQL API design",
+        "Database architecture & optimization",
+        "Authentication & authorization flows",
+        "Third-party API integrations"
+      ]
+    },
+    {
+      "title": "AI Integration",
+      "description": "Embedding intelligent AI capabilities into existing or new applications using modern LLM APIs.",
+      "icon": "Brain",
+      "features": [
+        "OpenAI GPT integration",
+        "Custom AI chatbot development",
+        "RAG pipeline implementation",
+        "AI-powered content generation",
+        "Prompt engineering & optimization"
+      ]
+    },
+    {
+      "title": "Automation & Scripting",
+      "description": "Eliminating repetitive workflows with smart automation scripts and process orchestration.",
+      "icon": "Zap",
+      "features": [
+        "Python automation scripts",
+        "Web scraping & data extraction",
+        "Scheduled task automation",
+        "Email & notification pipelines",
+        "Data processing workflows"
+      ]
+    },
+    {
+      "title": "Cloud Deployment",
+      "description": "Deploying, configuring, and monitoring applications on modern cloud infrastructure.",
+      "icon": "Cloud",
+      "features": [
+        "Vercel & cloud deployment",
+        "Docker containerization",
+        "Environment & secrets management",
+        "CI/CD pipeline configuration",
+        "Performance monitoring setup"
+      ]
+    },
+    {
+      "title": "API Development",
+      "description": "Designing and building robust, well-documented APIs that power web and mobile products.",
+      "icon": "Code2",
+      "features": [
+        "RESTful API architecture",
+        "FastAPI & Express backends",
+        "API documentation with OpenAPI",
+        "Rate limiting & security hardening",
+        "Webhook implementation"
+      ]
+    },
+    {
+      "title": "Technical Consulting",
+      "description": "Strategic technology advice for startups and teams making architectural and tooling decisions.",
+      "icon": "MessageSquare",
+      "features": [
+        "Tech stack selection & review",
+        "Code review & refactoring guidance",
+        "Performance bottleneck analysis",
+        "Security audit recommendations",
+        "Scalability planning"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "icon": "SiReact",
+      "category": "frontend",
+      "description": "Building dynamic, component-driven UIs with hooks, context, and modern React patterns.",
+      "level": 92,
+      "years": "3+ yrs"
+    },
+    {
+      "name": "Next.js",
+      "icon": "SiNextdotjs",
+      "category": "frontend",
+      "description": "Full-stack React framework for SSR, SSG, API routes, and production-grade applications.",
+      "level": 90,
+      "years": "3+ yrs"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "SiTypescript",
+      "category": "frontend",
+      "description": "Strict typing for scalable codebases, advanced generics, and comprehensive type safety.",
+      "level": 88,
+      "years": "2+ yrs"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "SiTailwindcss",
+      "category": "frontend",
+      "description": "Utility-first styling for rapid, consistent UI development across all screen sizes.",
+      "level": 95,
+      "years": "3+ yrs"
+    },
+    {
+      "name": "Framer Motion",
+      "icon": "SiFramer",
+      "category": "frontend",
+      "description": "Production-grade animations and micro-interactions for premium user experiences.",
+      "level": 80,
+      "years": "2 yrs"
+    },
+    {
+      "name": "Node.js",
+      "icon": "SiNodedotjs",
+      "category": "backend",
+      "description": "Scalable server-side JavaScript runtime for building fast, event-driven backend services.",
+      "level": 85,
+      "years": "2+ yrs"
+    },
+    {
+      "name": "Express",
+      "icon": "SiExpress",
+      "category": "backend",
+      "description": "Minimalist Node.js framework for building RESTful APIs and middleware-driven backends.",
+      "level": 83,
+      "years": "2+ yrs"
+    },
+    {
+      "name": "Python",
+      "icon": "SiPython",
+      "category": "backend",
+      "description": "Versatile language for scripting, automation, data pipelines, and AI/ML applications.",
+      "level": 80,
+      "years": "2+ yrs"
+    },
+    {
+      "name": "FastAPI",
+      "icon": "SiFastapi",
+      "category": "backend",
+      "description": "High-performance Python API framework with async support and automatic OpenAPI docs.",
+      "level": 75,
+      "years": "1+ yr"
+    },
+    {
+      "name": "TensorFlow",
+      "icon": "SiTensorflow",
+      "category": "ai",
+      "description": "Deep learning framework for building and training neural network models at scale.",
+      "level": 72,
+      "years": "1+ yr"
+    },
+    {
+      "name": "PyTorch",
+      "icon": "SiPytorch",
+      "category": "ai",
+      "description": "Dynamic neural network library for research-oriented deep learning and model experimentation.",
+      "level": 68,
+      "years": "1 yr"
+    },
+    {
+      "name": "OpenAI API",
+      "icon": "SiOpenai",
+      "category": "ai",
+      "description": "Integrating GPT models for intelligent text generation, embeddings, and AI-powered features.",
+      "level": 85,
+      "years": "2 yrs"
+    },
+    {
+      "name": "Langchain",
+      "icon": "SiPython",
+      "category": "ai",
+      "description": "Building LLM-powered applications, chains, agents, and retrieval-augmented generation pipelines.",
+      "level": 70,
+      "years": "1 yr"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "SiPostgresql",
+      "category": "databases",
+      "description": "Relational database for complex queries, ACID transactions, and structured data at scale.",
+      "level": 82,
+      "years": "2+ yrs"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "SiMongodb",
+      "category": "databases",
+      "description": "NoSQL document database for flexible schema design and horizontal scalability.",
+      "level": 78,
+      "years": "2 yrs"
+    },
+    {
+      "name": "Firebase",
+      "icon": "SiFirebase",
+      "category": "databases",
+      "description": "Google's real-time database and BaaS platform for rapid prototyping and production apps.",
+      "level": 80,
+      "years": "2 yrs"
+    },
+    {
+      "name": "Redis",
+      "icon": "SiRedis",
+      "category": "databases",
+      "description": "In-memory data store for caching, session management, and pub/sub messaging patterns.",
+      "level": 72,
+      "years": "1+ yr"
+    },
+    {
+      "name": "Docker",
+      "icon": "SiDocker",
+      "category": "devops",
+      "description": "Containerizing applications for consistent, portable environments across development and production.",
+      "level": 75,
+      "years": "1+ yr"
+    },
+    {
+      "name": "Git",
+      "icon": "SiGit",
+      "category": "devops",
+      "description": "Version control for collaborative workflows, branching strategies, and CI/CD integration.",
+      "level": 90,
+      "years": "3+ yrs"
+    },
+    {
+      "name": "Vercel",
+      "icon": "SiVercel",
+      "category": "devops",
+      "description": "Deploying Next.js applications with global CDN, instant rollbacks, and serverless functions.",
+      "level": 88,
+      "years": "3 yrs"
+    },
+    {
+      "name": "Linux",
+      "icon": "SiLinux",
+      "category": "devops",
+      "description": "Server administration, shell scripting, process management, and cloud instance configuration.",
+      "level": 78,
+      "years": "2+ yrs"
+    },
+    {
+      "name": "VS Code",
+      "icon": "SiVisualstudiocode",
+      "category": "tools",
+      "description": "Primary development environment with extensive extension ecosystem and debugging tools.",
+      "level": 95,
+      "years": "4 yrs"
+    },
+    {
+      "name": "Figma",
+      "icon": "SiFigma",
+      "category": "tools",
+      "description": "UI/UX design and prototyping for translating design systems into pixel-perfect interfaces.",
+      "level": 75,
+      "years": "2 yrs"
+    },
+    {
+      "name": "Postman",
+      "icon": "SiPostman",
+      "category": "tools",
+      "description": "API testing, documentation, and collaboration for robust backend development workflows.",
+      "level": 88,
+      "years": "3 yrs"
+    }
+  ],
+  "techStack": [
+    {
+      "name": "Next.js",
+      "icon": "SiNextdotjs",
+      "category": "Frontend",
+      "color": "#ffffff"
+    },
+    {
+      "name": "React",
+      "icon": "SiReact",
+      "category": "Frontend",
+      "color": "#61DAFB"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "SiTypescript",
+      "category": "Frontend",
+      "color": "#3178C6"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "SiTailwindcss",
+      "category": "Frontend",
+      "color": "#06B6D4"
+    },
+    {
+      "name": "Framer Motion",
+      "icon": "SiFramer",
+      "category": "Frontend",
+      "color": "#BB4AE8"
+    },
+    {
+      "name": "Node.js",
+      "icon": "SiNodedotjs",
+      "category": "Backend",
+      "color": "#339933"
+    },
+    {
+      "name": "Express",
+      "icon": "SiExpress",
+      "category": "Backend",
+      "color": "#ffffff"
+    },
+    {
+      "name": "Python",
+      "icon": "SiPython",
+      "category": "Backend",
+      "color": "#3776AB"
+    },
+    {
+      "name": "FastAPI",
+      "icon": "SiFastapi",
+      "category": "Backend",
+      "color": "#009688"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "SiPostgresql",
+      "category": "Database",
+      "color": "#4169E1"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "SiMongodb",
+      "category": "Database",
+      "color": "#47A248"
+    },
+    {
+      "name": "Firebase",
+      "icon": "SiFirebase",
+      "category": "Database",
+      "color": "#FFCA28"
+    },
+    {
+      "name": "Redis",
+      "icon": "SiRedis",
+      "category": "Database",
+      "color": "#DC382D"
+    },
+    {
+      "name": "Docker",
+      "icon": "SiDocker",
+      "category": "DevOps",
+      "color": "#2496ED"
+    },
+    {
+      "name": "Git",
+      "icon": "SiGit",
+      "category": "DevOps",
+      "color": "#F05032"
+    },
+    {
+      "name": "GitHub",
+      "icon": "SiGithub",
+      "category": "DevOps",
+      "color": "#ffffff"
+    },
+    {
+      "name": "Vercel",
+      "icon": "SiVercel",
+      "category": "DevOps",
+      "color": "#ffffff"
+    },
+    {
+      "name": "Linux",
+      "icon": "SiLinux",
+      "category": "DevOps",
+      "color": "#FCC624"
+    },
+    {
+      "name": "OpenAI",
+      "icon": "SiOpenai",
+      "category": "AI/ML",
+      "color": "#ffffff"
+    },
+    {
+      "name": "TensorFlow",
+      "icon": "SiTensorflow",
+      "category": "AI/ML",
+      "color": "#FF6F00"
+    },
+    {
+      "name": "PyTorch",
+      "icon": "SiPytorch",
+      "category": "AI/ML",
+      "color": "#EE4C2C"
+    },
+    {
+      "name": "Appwrite",
+      "icon": "SiAppwrite",
+      "category": "Backend",
+      "color": "#FD366E"
+    },
+    {
+      "name": "Figma",
+      "icon": "SiFigma",
+      "category": "Tools",
+      "color": "#F24E1E"
+    },
+    {
+      "name": "Prisma",
+      "icon": "SiPrisma",
+      "category": "Database",
+      "color": "#2D3748"
+    },
+    {
+      "name": "Shadcn UI",
+      "icon": "SiRadixui",
+      "category": "Frontend",
+      "color": "#ffffff"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Arjun Mehta",
+      "role": "Product Manager",
+      "company": "TechFlow Labs",
+      "feedback": "Dayanand delivered an exceptional full-stack application that exceeded our expectations. His attention to detail, clean code, and proactive communication made the project a seamless experience from start to launch.",
+      "rating": 5,
+      "initials": "AM",
+      "avatarColor": "#10b981"
+    },
+    {
+      "name": "Priya Sharma",
+      "role": "Startup Founder",
+      "company": "Elevate Digital",
+      "feedback": "Working with Dayanand was a game-changer for our startup. He not only built our platform on time but also suggested architectural improvements that saved us significant development time down the road.",
+      "rating": 5,
+      "initials": "PS",
+      "avatarColor": "#06b6d4"
+    },
+    {
+      "name": "Rahul Verma",
+      "role": "Senior Developer",
+      "company": "CodeBase Systems",
+      "feedback": "The AI integration Dayanand built for our product was impressive. He has a rare ability to translate complex requirements into elegant, maintainable solutions. Highly recommend for any serious technical project.",
+      "rating": 5,
+      "initials": "RV",
+      "avatarColor": "#8b5cf6"
+    },
+    {
+      "name": "Sneha Patel",
+      "role": "Marketing Director",
+      "company": "GrowthEdge",
+      "feedback": "Our website performance improved dramatically after Dayanand's optimization work. He is thorough, communicates well, and truly cares about delivering quality — not just completing a checklist.",
+      "rating": 5,
+      "initials": "SP",
+      "avatarColor": "#f59e0b"
+    }
+  ]
+}

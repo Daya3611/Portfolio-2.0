@@ -1,467 +1,212 @@
 "use client";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, Download, ArrowUpRight } from "lucide-react";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
 import Image from "next/image";
-import React from "react";
-import { motion, AnimatePresence, Variants } from "framer-motion";
-import { Button } from "./ui/button";
-import { HoverBorderGradient } from "./ui/hover-border-gradient";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 
-const Navbar = () => {
-  // Animation variants
-  const navbarVariants: Variants = {
-    hidden: {
-      opacity: 0,
-      y: -20,
-      scale: 0.95
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: [0.22, 1, 0.36, 1],
-        staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
-  };
+const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Achievements", href: "#achievements" },
+  { label: "Contact", href: "#contact" },
+];
 
-  const itemVariants: Variants = {
-    hidden: { opacity: 0, y: -10 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: [0.22, 1, 0.36, 1]
-      }
-    }
-  };
+export default function Navbar() {
+  const scrollDirection = useScrollDirection();
+  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  const pulseVariants: Variants = {
-    animate: {
-      scale: [1, 1.2, 1],
-      opacity: [1, 0.8, 1],
-      transition: {
-        duration: 2,
-        repeat: Infinity,
-        ease: "easeInOut"
-      }
-    }
-  };
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-  const buttonHoverVariants: Variants = {
-    rest: { scale: 1 },
-    hover: {
-      scale: 1.05,
-      transition: {
-        duration: 0.2,
-        ease: "easeOut"
-      }
-    },
-    tap: { scale: 0.95 }
-  };
+  useEffect(() => {
+    const sections = navLinks.map((l) => l.href.replace("#", ""));
+    const observers: IntersectionObserver[] = [];
 
-  const contactButtonVariants: Variants = {
-    rest: {
-      scale: 1,
-      boxShadow: "0 0 0 rgba(255,255,255,0)"
-    },
-    hover: {
-      scale: 1.02,
-      boxShadow: "0 0 20px rgba(255,255,255,0.1)",
-      transition: {
-        duration: 0.3,
-        ease: "easeOut"
-      }
-    },
-    tap: { scale: 0.98 }
-  };
+    sections.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const obs = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setActiveSection(id);
+        },
+        { threshold: 0.4 }
+      );
+      obs.observe(el);
+      observers.push(obs);
+    });
 
-  const dialogContentVariants: Variants = {
-    hidden: {
-      opacity: 0,
-      scale: 0.9,
-      y: 20
-    },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: {
-        duration: 0.4,
-        ease: [0.22, 1, 0.36, 1]
-      }
-    },
-    exit: {
-      opacity: 0,
-      scale: 0.95,
-      y: 10,
-      transition: {
-        duration: 0.2
-      }
-    }
-  };
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
 
-  const staggerContainerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.08,
-        delayChildren: 0.1
-      }
-    }
-  };
-
-  const staggerItemVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.4,
-        ease: [0.22, 1, 0.36, 1]
-      }
-    }
+  const handleNavClick = (href: string) => {
+    setMobileOpen(false);
+    const id = href.replace("#", "");
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <motion.nav
-      className=""
-      initial="hidden"
-      animate="visible"
-      variants={navbarVariants}
-    >
-      <motion.div
-        className="
-          w-full
-          bg-gradient-to-r from-white/10 via-white/5 to-white/10
-          backdrop-blur-xl
-          border border-white/20
-          shadow-lg shadow-black/30
-          rounded-3xl px-3 py-2
-          flex flex-wrap gap-3
-          items-center justify-between
-        "
-        variants={itemVariants}
-        whileHover={{
-          boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
-          borderColor: "rgba(255, 255, 255, 0.3)",
-          transition: { duration: 0.3 }
+    <>
+      <motion.header
+        initial={{ y: -80, opacity: 0 }}
+        animate={{
+          y: scrollDirection === "down" && scrolled ? -100 : 0,
+          opacity: scrollDirection === "down" && scrolled ? 0 : 1,
         }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        className="fixed top-6 left-0 right-0 z-50 px-4 flex justify-center pointer-events-none"
       >
-        <motion.div
-          className="flex items-center gap-3 min-w-[200px] flex-1 text-white"
-          variants={itemVariants}
+        <nav
+          className={`pointer-events-auto rounded-full p-2 flex items-center justify-between gap-4 lg:gap-8 transition-all duration-500 ${scrolled
+              ? "backdrop-blur-xl bg-[#0A0A0A]/80 border border-white/10 shadow-2xl"
+              : "backdrop-blur-md bg-black/20 border border-white/5"
+            }`}
         >
-          <motion.div
-            whileHover={{ scale: 1.1, rotate: 5 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          {/* Logo */}
+          <button
+            onClick={() => handleNavClick("#home")}
+            className="flex items-center group pl-2"
+            aria-label="Go to home"
           >
-            <Image
-              src="/profile.png"
-              alt="logo"
-              width={38}
-              height={38}
-              className="rounded-3xl"
-            />
-          </motion.div>
+            <div className="relative w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-transform group-hover:scale-105 overflow-hidden">
+              <Image src="/profile.jpeg" alt="Profile" fill className="object-cover" sizes="32px" />
+            </div>
+          </button>
 
-          <div className="flex flex-col">
-            <motion.div
-              className="flex items-center gap-2"
-              variants={itemVariants}
-            >
-              <motion.h1
-                className="text-sm font-semibold"
-                whileHover={{ x: 2 }}
-                transition={{ type: "spring", stiffness: 400 }}
-              >
-                Dayanand Gawade
-              </motion.h1>
-              <motion.span
-                className="w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-black"
-                variants={pulseVariants}
-                animate="animate"
-              />
-            </motion.div>
-            <motion.p
-              className="text-xs text-white/80"
-              variants={itemVariants}
-              whileHover={{ opacity: 1 }}
-            >
-              Available for work
-            </motion.p>
+          {/* Desktop Links */}
+          <div className="hidden lg:flex items-center gap-1">
+            {navLinks.map((link) => {
+              const isActive = activeSection === link.href.replace("#", "");
+              return (
+                <button
+                  key={link.href}
+                  onClick={() => handleNavClick(link.href)}
+                  className={`relative px-4 py-2 text-[13px] font-medium rounded-full transition-colors ${isActive
+                      ? "text-white"
+                      : "text-zinc-400 hover:text-white"
+                    }`}
+                >
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-pill"
+                      className="absolute inset-0 bg-white/10 rounded-full"
+                      transition={{ type: "spring", bounce: 0.2, duration: 0.5 }}
+                    />
+                  )}
+                  <span className="relative z-10">{link.label}</span>
+                </button>
+              );
+            })}
           </div>
-        </motion.div>
 
-        <div className="md:flex justify-end flex-grow hidden">
-          <motion.div
-            variants={contactButtonVariants}
-            initial="rest"
-            whileHover="hover"
-            whileTap="tap"
-          >
-            <HoverBorderGradient
-              containerClassName="rounded-full"
-              as="button"
-              className="px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-800 font-medium
-                hover:bg-white/15 transition"
+          {/* Desktop Resume Button */}
+          <div className="hidden lg:flex pr-2">
+            <a
+              href="/resume.pdf"
+              download="Dayanand_Gawade_Resume.pdf"
+              className="flex items-center gap-2 px-4 py-2 text-[13px] font-semibold bg-white hover:bg-slate-200 text-black rounded-full transition-all duration-200"
             >
-              <div>
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <motion.span
-                      className="cursor-pointer inline-block"
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      Contact Me
-                    </motion.span>
-                  </DialogTrigger>
-                  <AnimatePresence>
-                    <DialogContent className="bg-neutral-900 border-neutral-800">
-                      <motion.div
-                        variants={dialogContentVariants}
-                        initial="hidden"
-                        animate="visible"
-                        exit="exit"
-                      >
-                        <DialogHeader>
-                          <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
-                            Contact Me
-                          </DialogTitle>
-                          <DialogDescription className="text-neutral-400">
-                            Don't hesitate to reach out if you have something
-                            interesting or just want to say hi!
+              <Download className="w-3.5 h-3.5" />
+              Resume
+            </a>
+          </div>
 
-                            <motion.div
-                              className="mt-6"
-                              variants={staggerContainerVariants}
-                              initial="hidden"
-                              animate="visible"
-                            >
-                              <motion.p
-                                className="text-[12px] text-neutral-200 pb-2 font-medium tracking-wide uppercase"
-                                variants={staggerItemVariants}
-                              >
-                                Recommended
-                              </motion.p>
-                              <motion.div
-                                className="pt-2 grid grid-cols-3 gap-3"
-                                variants={staggerContainerVariants}
-                              >
-                                {[
-                                  { name: "WhatsApp", url: "https://miniurl.dayanandgawade.in/WhatsApp" },
-                                  { name: "Discord", url: "https://miniurl.dayanandgawade.in/Discord" },
-                                  { name: "Email", url: "mailto:hi@dayanandgawade.in" }
-                                ].map((item, index) => (
-                                  <motion.div
-                                    key={item.name}
-                                    variants={staggerItemVariants}
-                                    whileHover={{ scale: 1.05, y: -2 }}
-                                    whileTap={{ scale: 0.95 }}
-                                  >
-                                    <Button
-                                      className="w-full bg-white text-black hover:bg-neutral-200 font-medium"
-                                      onClick={() => {
-                                        window.location.href = item.url;
-                                      }}
-                                    >
-                                      {item.name}
-                                    </Button>
-                                  </motion.div>
-                                ))}
-                              </motion.div>
-
-                              <motion.p
-                                className="text-[12px] text-neutral-200 mt-6 pb-2 font-medium tracking-wide uppercase"
-                                variants={staggerItemVariants}
-                              >
-                                Other
-                              </motion.p>
-                              <motion.div
-                                className="pt-2 grid grid-cols-1 gap-3"
-                                variants={staggerContainerVariants}
-                              >
-                                {[
-                                  { name: "Instagram", url: "https://miniurl.dayanandgawade.in/Instagram" },
-                                  { name: "Github", url: "https://miniurl.dayanandgawade.in/Github" },
-                                  { name: "LinkedIn", url: "https://miniurl.dayanandgawade.in/linkdin" }
-                                ].map((item, index) => (
-                                  <motion.div
-                                    key={item.name}
-                                    variants={staggerItemVariants}
-                                    whileHover={{ scale: 1.02, x: 4 }}
-                                    whileTap={{ scale: 0.98 }}
-                                  >
-                                    <Button
-                                      className="w-full bg-neutral-950 text-white border border-neutral-800 hover:bg-neutral-900 hover:border-neutral-700 transition-all duration-300"
-                                      onClick={() => {
-                                        window.location.href = item.url;
-                                      }}
-                                    >
-                                      <span className="flex items-center gap-2">
-                                        {item.name === "LinkedIn" ? "LinkedIn" : item.name}
-                                      </span>
-                                    </Button>
-                                  </motion.div>
-                                ))}
-                              </motion.div>
-                            </motion.div>
-                          </DialogDescription>
-                        </DialogHeader>
-                      </motion.div>
-                    </DialogContent>
-                  </AnimatePresence>
-                </Dialog>
-              </div>
-            </HoverBorderGradient>
-          </motion.div>
-        </div>
-
-        <div className="flex justify-end flex-grow md:hidden">
-          <motion.div
-            variants={contactButtonVariants}
-            initial="rest"
-            whileHover="hover"
-            whileTap="tap"
+          {/* Mobile Menu Toggle */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="lg:hidden p-2 mr-1 rounded-full text-zinc-400 hover:text-white hover:bg-white/10 transition-colors"
+            aria-label="Toggle mobile menu"
+            aria-expanded={mobileOpen}
           >
-            <HoverBorderGradient
-              containerClassName="rounded-full"
-              as="button"
-              className="px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-800 font-medium
-                hover:bg-white/15 transition"
-            >
-              <div>
-                <Drawer>
-                  <DrawerTrigger asChild>
-                    <motion.span
-                      className="cursor-pointer inline-block"
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      Contact Me
-                    </motion.span>
-                  </DrawerTrigger>
-                  <DrawerContent className="bg-neutral-950 border-neutral-800">
-                    <motion.div
-                      initial={{ opacity: 0, y: 50 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 50 }}
-                      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                    >
-                      <DrawerHeader>
-                        <DrawerTitle className="text-left text-2xl font-bold text-white">
-                          Contact Me
-                        </DrawerTitle>
-                        <DrawerDescription className="text-left text-neutral-400">
-                          <p className="text-left">
-                            Don't hesitate to reach out if you have something
-                            interesting or just want to say hi!
-                          </p>
-                          <motion.div
-                            className="mt-6"
-                            variants={staggerContainerVariants}
-                            initial="hidden"
-                            animate="visible"
-                          >
-                            <motion.p
-                              className="text-[12px] text-left text-neutral-200 pb-2 font-medium tracking-wide uppercase"
-                              variants={staggerItemVariants}
-                            >
-                              Recommended
-                            </motion.p>
-                            <motion.div
-                              className="pt-2 grid grid-cols-3 gap-3"
-                              variants={staggerContainerVariants}
-                            >
-                              {[
-                                { name: "WhatsApp", url: "https://miniurl.dayanandgawade.in/WhatsApp" },
-                                { name: "Discord", url: "https://miniurl.dayanandgawade.in/Discord" },
-                                { name: "Email", url: "mailto:hi@dayanandgawade.in" }
-                              ].map((item) => (
-                                <motion.div
-                                  key={item.name}
-                                  variants={staggerItemVariants}
-                                  whileHover={{ scale: 1.05, y: -2 }}
-                                  whileTap={{ scale: 0.95 }}
-                                >
-                                  <Button
-                                    className="w-full bg-white text-black hover:bg-neutral-200 font-medium"
-                                    onClick={() => {
-                                      window.location.href = item.url;
-                                    }}
-                                  >
-                                    {item.name}
-                                  </Button>
-                                </motion.div>
-                              ))}
-                            </motion.div>
+            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </nav>
+      </motion.header>
 
-                            <motion.p
-                              className="text-[12px] text-left text-neutral-200 mt-6 pb-2 font-medium tracking-wide uppercase"
-                              variants={staggerItemVariants}
-                            >
-                              Other
-                            </motion.p>
-                            <motion.div
-                              className="pt-2 grid grid-cols-1 gap-3"
-                              variants={staggerContainerVariants}
-                            >
-                              {[
-                                { name: "Instagram", url: "https://miniurl.dayanandgawade.in/Instagram" },
-                                { name: "Github", url: "https://miniurl.dayanandgawade.in/Github" },
-                                { name: "LinkedIn", url: "https://miniurl.dayanandgawade.in/linkdin" }
-                              ].map((item) => (
-                                <motion.div
-                                  key={item.name}
-                                  variants={staggerItemVariants}
-                                  whileHover={{ scale: 1.02, x: 4 }}
-                                  whileTap={{ scale: 0.98 }}
-                                >
-                                  <Button
-                                    className="w-full bg-neutral-950 text-white border border-neutral-800 hover:bg-neutral-900 hover:border-neutral-700 transition-all duration-300"
-                                    onClick={() => {
-                                      window.location.href = item.url;
-                                    }}
-                                  >
-                                    {item.name === "linkdin" ? "LinkedIn" : item.name}
-                                  </Button>
-                                </motion.div>
-                              ))}
-                            </motion.div>
-                          </motion.div>
-                        </DrawerDescription>
-                      </DrawerHeader>
-                    </motion.div>
-                  </DrawerContent>
-                </Drawer>
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-[60] lg:hidden"
+          >
+            <div
+              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+              onClick={() => setMobileOpen(false)}
+            />
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 30, stiffness: 300 }}
+              className="absolute right-0 top-0 bottom-0 w-72 bg-[#0B0B0B] border-l border-white/8 p-6 flex flex-col"
+            >
+              <div className="flex items-center justify-between mb-8">
+                <div className="flex items-center gap-3">
+                  <div className="relative w-8 h-8 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
+                    <Image src="/profile.jpeg" alt="Profile" fill className="object-cover" sizes="32px" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-white">Dayanand Gawade</p>
+                    <p className="text-[11px] text-slate-400">Available for work</p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setMobileOpen(false)}
+                  className="p-2 rounded-lg text-zinc-400 hover:text-white hover:bg-white/8 transition-colors"
+                  aria-label="Close menu"
+                >
+                  <X className="w-5 h-5" />
+                </button>
               </div>
-            </HoverBorderGradient>
+
+              <nav className="flex flex-col gap-1 flex-1">
+                {navLinks.map((link, i) => {
+                  const isActive = activeSection === link.href.replace("#", "");
+                  return (
+                    <motion.button
+                      key={link.href}
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: i * 0.05 }}
+                      onClick={() => handleNavClick(link.href)}
+                      className={`flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-colors ${isActive
+                          ? "bg-slate-500/10 text-slate-400 border border-slate-500/20"
+                          : "text-zinc-400 hover:text-white hover:bg-white/5"
+                        }`}
+                    >
+                      {link.label}
+                      {isActive && <ArrowUpRight className="w-3.5 h-3.5" />}
+                    </motion.button>
+                  );
+                })}
+              </nav>
+
+              <div className="pt-6 border-t border-white/8">
+                <a
+                  href="/resume.pdf"
+                  download="Dayanand_Gawade_Resume.pdf"
+                  className="flex items-center justify-center gap-2 w-full px-4 py-3 text-sm font-semibold bg-white hover:bg-slate-200 text-black rounded-full transition-colors"
+                >
+                  <Download className="w-4 h-4" />
+                  Download Resume
+                </a>
+              </div>
+            </motion.div>
           </motion.div>
-        </div>
-      </motion.div>
-    </motion.nav>
+        )}
+      </AnimatePresence>
+    </>
   );
-};
-
-export default Navbar;
+}
