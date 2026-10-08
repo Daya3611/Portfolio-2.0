@@ -133,7 +133,7 @@ export default function Hero() {
             >
               <button
                 onClick={scrollToProjects}
-                className="flex items-center gap-2 px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-slate-200 transition-colors text-sm shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]"
+                className="flex items-center gap-2 px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-slate-200 transition-colors text-sm shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]"
               >
                 View Projects
                 <ArrowRight className="w-4 h-4" />
@@ -141,7 +141,7 @@ export default function Hero() {
 
               <button
                 onClick={scrollToContact}
-                className="flex items-center gap-2 px-6 py-3 bg-transparent hover:bg-white/5 text-zinc-300 hover:text-white font-medium rounded-lg border border-white/10 transition-colors text-sm"
+                className="flex items-center gap-2 px-6 py-3 bg-transparent hover:bg-white/5 text-zinc-300 hover:text-white font-medium rounded-full border border-white/10 transition-colors text-sm"
               >
                 <Briefcase className="w-4 h-4" />
                 Contact Me

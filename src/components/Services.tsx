@@ -54,7 +54,7 @@ export default function Services() {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="h-full"
               >
-                <CardSpotlight 
+                <CardSpotlight
                   className="h-full bg-[#0A0A0A] border-white/10 rounded-2xl p-6 sm:p-8 hover:border-white/20 transition-all duration-300"
                   color="rgba(148, 163, 184, 0.15)"
                   radius={400}

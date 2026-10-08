@@ -40,7 +40,7 @@ export default function PageLoader() {
                 animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0, 0.2] }}
                 transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
               />
-              
+
               {/* Spinning Gradient Border */}
               <motion.div
                 className="absolute inset-[-4px] rounded-full"
@@ -50,17 +50,17 @@ export default function PageLoader() {
                 animate={{ rotate: 360 }}
                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
               />
-              
+
               {/* Inner Circle Background to mask the spinning gradient */}
               <div className="absolute inset-0 bg-[#050505] rounded-full" />
 
               {/* Avatar Image */}
               <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-white/10 shadow-[0_0_30px_rgba(6,182,212,0.3)] z-10">
-                <Image 
-                  src="/profile.png" 
-                  alt="Profile Loading" 
-                  fill 
-                  className="object-cover" 
+                <Image
+                  src="/profile.png"
+                  alt="Profile Loading"
+                  fill
+                  className="object-cover"
                   sizes="96px"
                   priority
                 />
@@ -94,10 +94,10 @@ export default function PageLoader() {
                   ))}
                 </div>
               </div>
-              
+
               {/* Optional Progress bar effect */}
               <div className="w-32 h-[3px] bg-white/5 rounded-full overflow-hidden">
-                <motion.div 
+                <motion.div
                   className="h-full bg-gradient-to-r from-emerald-500 to-cyan-500"
                   initial={{ x: "-100%" }}
                   animate={{ x: "100%" }}

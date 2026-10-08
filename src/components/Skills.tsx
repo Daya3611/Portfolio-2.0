@@ -96,11 +96,10 @@ export default function Skills() {
               role="tab"
               aria-selected={activeCategory === cat.key}
               onClick={() => setActiveCategory(cat.key)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
-                activeCategory === cat.key
+              className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${activeCategory === cat.key
                   ? "bg-slate-500 text-black shadow-lg shadow-slate-500/20"
                   : "bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10 border border-white/8"
-              }`}
+                }`}
             >
               {cat.label}
             </button>

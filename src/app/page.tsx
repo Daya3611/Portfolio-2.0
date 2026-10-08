@@ -1,39 +1,22 @@
-import PageLoader from "@/components/PageLoader";
-import ScrollProgress from "@/components/ScrollProgress";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-
-import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
-import Achievements from "@/components/Achievements";
-import Certifications from "@/components/Certifications";
-import Services from "@/components/Services";
-import TechStack from "@/components/TechStack";
-import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import React from "react";
+import HeaderIntro from "@/components/HeaderIntro";
+import ActivityHeatmap from "@/components/ActivityHeatmap";
+import ExperienceTimeline from "@/components/ExperienceTimeline";
+import SideProjectsGrid from "@/components/SideProjectsGrid";
+import ProjectsDirectory from "@/components/ProjectsDirectory";
+import ContactFooter from "@/components/ContactFooter";
 
 export default function Home() {
   return (
-    <>
-      <PageLoader />
-      <ScrollProgress />
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-
-        <Experience />
-        <Projects />
-        <Achievements />
-        {/* <Certifications /> */}
-        <Services />
-        <TechStack />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <main className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-zinc-800 selection:text-zinc-100">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-4">
+        <HeaderIntro />
+        <ActivityHeatmap />
+        <ExperienceTimeline />
+        <SideProjectsGrid />
+        <ProjectsDirectory />
+        <ContactFooter />
+      </div>
+    </main>
   );
 }

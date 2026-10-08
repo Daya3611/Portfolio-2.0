@@ -67,8 +67,8 @@ export default function Navbar() {
       >
         <nav
           className={`pointer-events-auto rounded-full p-2 flex items-center justify-between gap-4 lg:gap-8 transition-all duration-500 ${scrolled
-              ? "backdrop-blur-xl bg-[#0A0A0A]/80 border border-white/10 shadow-2xl"
-              : "backdrop-blur-md bg-black/20 border border-white/5"
+            ? "backdrop-blur-xl bg-[#0A0A0A]/80 border border-white/10 shadow-2xl"
+            : "backdrop-blur-md bg-black/20 border border-white/5"
             }`}
         >
           {/* Logo */}
@@ -91,8 +91,8 @@ export default function Navbar() {
                   key={link.href}
                   onClick={() => handleNavClick(link.href)}
                   className={`relative px-4 py-2 text-[13px] font-medium rounded-full transition-colors ${isActive
-                      ? "text-white"
-                      : "text-zinc-400 hover:text-white"
+                    ? "text-white"
+                    : "text-zinc-400 hover:text-white"
                     }`}
                 >
                   {isActive && (
@@ -182,8 +182,8 @@ export default function Navbar() {
                       transition={{ delay: i * 0.05 }}
                       onClick={() => handleNavClick(link.href)}
                       className={`flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-colors ${isActive
-                          ? "bg-slate-500/10 text-slate-400 border border-slate-500/20"
-                          : "text-zinc-400 hover:text-white hover:bg-white/5"
+                        ? "bg-slate-500/10 text-slate-400 border border-slate-500/20"
+                        : "text-zinc-400 hover:text-white hover:bg-white/5"
                         }`}
                     >
                       {link.label}

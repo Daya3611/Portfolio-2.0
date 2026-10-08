@@ -60,11 +60,10 @@ export default function TechStack() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-full text-xs font-medium transition-colors ${
-                activeCategory === cat
+              className={`px-4 py-2 rounded-full text-xs font-medium transition-colors ${activeCategory === cat
                   ? "bg-white text-black"
                   : "bg-white/5 text-zinc-400 hover:text-white border border-white/5"
-              }`}
+                }`}
             >
               {cat}
             </button>
@@ -86,8 +85,8 @@ export default function TechStack() {
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: i * 0.015, duration: 0.3 }}
               >
-                <Badge 
-                  variant="outline" 
+                <Badge
+                  variant="outline"
                   className="px-4 py-2.5 text-sm font-medium border-white/10 bg-[#0A0A0A] text-zinc-300 hover:text-white hover:bg-white/5 transition-all duration-300 flex items-center gap-2.5 shadow-sm"
                 >
                   {Icon && <Icon className="w-4 h-4" style={{ color: tech.color }} />}

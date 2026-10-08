@@ -48,11 +48,10 @@ export default function Projects() {
                 role="tab"
                 aria-selected={activeFilter === f}
                 onClick={() => setActiveFilter(f)}
-                className={`px-4 py-2 text-[13px] font-semibold rounded-full transition-all duration-300 ${
-                  activeFilter === f
+                className={`px-4 py-2 text-[13px] font-semibold rounded-full transition-all duration-300 ${activeFilter === f
                     ? "bg-white text-black shadow-lg"
                     : "text-zinc-400 hover:text-white hover:bg-white/10"
-                }`}
+                  }`}
               >
                 {f}
               </button>
@@ -87,7 +86,7 @@ export default function Projects() {
                       {project.title}
                     </h3>
                     <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-slate-500/20 group-hover:scale-110 transition-all duration-300 shrink-0 relative z-20">
-                       <ExternalLink className="w-4 h-4 text-zinc-400 group-hover:text-white transition-colors" />
+                      <ExternalLink className="w-4 h-4 text-zinc-400 group-hover:text-white transition-colors" />
                     </div>
                   </div>
 
